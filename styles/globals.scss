@@ -1,0 +1,74 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 4px 6px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.page {
+  padding: 20px 40px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+
+  svg,
+  &_close_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+
+.badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 32px;
+  background-color: $light-black;
+  font: {
+    size: 14px;
+    weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 10px 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: $page-base-bg;
+    color-scheme: dark;
+  }
+}
