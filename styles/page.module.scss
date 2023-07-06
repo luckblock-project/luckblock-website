@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 60px 0 40px;
-  gap: 20px;
+  padding: 80px 0 40px;
+  gap: 80px;
 
   .hero {
     width: 100%;
@@ -21,8 +21,9 @@
     @include center;
 
     .hero_image {
+      border-radius: 24px;
       order: 2;
-      flex: 0.6;
+      flex: 0.7;
       height: 100%;
       background-image: url("../public/hero-robo.png");
       background-size: cover;
@@ -32,45 +33,141 @@
 
     .hero_content {
       order: 1;
-      flex: 0.4;
+      flex: 0.5;
       height: 100%;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 0 40px;
+      padding-left: 60px;
       gap: 20px;
 
       .hero_badge {
         color: $neon-green;
         text-transform: uppercase;
+        gap: 8px;
       }
 
       h1 {
         font: {
-          size: 48px;
-          weight: 700;
+          size: 46px;
+          weight: 600;
         }
+        letter-spacing: -1px;
       }
 
       p {
-        font: {
-          size: 18px;
-          weight: 400;
-        }
+        opacity: 0.75;
+        letter-spacing: 0.5px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+
+      .hero_buttons {
+        display: flex;
+        gap: 20px;
       }
 
       .hero_btn {
-        width: 200px;
-        height: 50px;
-        border-radius: 4px;
+        width: fit-content;
+        padding: 12px 20px;
+        border-radius: 8px;
         background-color: $neon-green;
-        color: #fff;
-        font: {
-          size: 16px;
-          weight: 500;
-        }
+        fill: $black-text;
+        font-weight: 600;
         @include center;
+        gap: 10px;
+
+        &:nth-child(1) {
+          color: $black-text;
+        }
+
+        &:nth-child(2) {
+          fill: $neon-green;
+          color: $neon-green;
+          background-color: transparent;
+          border: 2px solid $neon-green;
+
+          svg {
+            width: 14px;
+            height: 14px;
+          }
+        }
       }
     }
+  }
+
+  @media (max-width: 998px) {
+    .hero {
+      flex-direction: column;
+      height: auto;
+
+      .hero_content {
+        order: 2;
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+        flex: 1;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+          font-size: 34px;
+        }
+
+        &_underline_text:after {
+          transform: scaleX(0.65);
+          left: -32px;
+        }
+
+        .hero_buttons {
+          width: 100%;
+          flex-direction: column;
+          gap: 20px;
+
+          .hero_btn {
+            width: 100%;
+          }
+        }
+      }
+
+      .hero_image {
+        background-image: url("../public/hero-robo-mobile.png");
+        background-size: cover;
+        background-position: top;
+        order: 1;
+        flex: unset;
+        width: 100%;
+        height: 260px;
+      }
+    }
+  }
+
+  .section_head {
+    width: 580px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section_head {
+      width: 100%;
+    }
+  }
+
+  .token_section {
+    width: 100vw;
+    padding: 40px 120px;
+    background-color: $black-section-bg;
+    // clip-path: ellipse(100% -20% at 0% 0%);
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 20px;
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .home_page {
+    gap: 60px;
+    padding: 60px 0px 20px;
   }
 }
