@@ -1,0 +1,117 @@
+@import "variables";
+@import "mixins";
+
+.solutions {
+  padding: 20px;
+
+  .solution_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .solution_image {
+      width: 50%;
+    }
+
+    .solution_content {
+      width: 50%;
+      padding: 0 20px;
+      @include center(column);
+      align-items: flex-start;
+      gap: 28px;
+
+      h3 {
+        font-size: 38px;
+        font-weight: 500;
+
+        .solution_underline_text:after {
+          transform: scaleX(1.2);
+          left: 22px;
+        }
+      }
+
+      p {
+        color: $gray-text;
+        line-height: 28px;
+      }
+
+      a {
+        padding: 10px 20px;
+        border: 2px rgb(255 255 255 / 0.2) solid;
+        border-radius: 6px;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  @media screen and (max-width: 998px) {
+    .solution_row {
+      .solution_image {
+        width: 100%;
+        padding: 0;
+        width: 300px;
+        height: auto;
+      }
+
+      .solution_content {
+        width: 100%;
+        gap: 18px;
+        padding: 0;
+        align-items: center;
+
+        h3 {
+          font-size: 28px;
+          text-align: center;
+
+          .solution_underline_text:after {
+            transform: scaleX(0.8);
+            left: -20px;
+          }
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .solutions {
+    padding: 20px;
+
+    .solution_row {
+      flex-direction: column;
+
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .solution_image {
+        width: 100%;
+        padding: 0;
+        width: 260px;
+        height: auto;
+      }
+
+      .solution_content {
+        h3 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
