@@ -6,6 +6,23 @@
   margin: 0;
 }
 
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    max-width: 100%;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -45,18 +62,6 @@ button {
     top: 20px;
     right: 20px;
     cursor: pointer;
-  }
-}
-
-.badge {
-  display: inline-block;
-  width: fit-content;
-  padding: 6px 12px;
-  border-radius: 32px;
-  background-color: $light-black;
-  font: {
-    size: 14px;
-    weight: 600;
   }
 }
 
