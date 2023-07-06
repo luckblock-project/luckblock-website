@@ -1,3 +1,5 @@
+import styles from "@/styles/badge.module.scss";
+
 export default function Badge({
   children,
   className = "",
@@ -5,5 +7,5 @@ export default function Badge({
   children: React.ReactNode;
   className: string;
 }): JSX.Element {
-  return <span className={`badge ${className}`}>{children}</span>;
+  return <span className={`${styles.badge} ${className}`}>{children}</span>;
 }
