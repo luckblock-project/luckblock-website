@@ -1,0 +1,19 @@
+@import "variables";
+
+.underline {
+  position: relative;
+  color: $neon-green;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:after {
+    content: url("../public/underline.svg");
+    position: absolute;
+    transform: scaleX(0.85);
+    bottom: -20px;
+    left: -14px;
+    background-color: transparent;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+  }
+}

@@ -1,0 +1,43 @@
+@import "mixins";
+@import "variables";
+
+.section_head {
+  margin: 0 auto;
+  @include center(column);
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  text-align: center;
+
+  strong {
+    color: $neon-green;
+    text-transform: uppercase;
+    letter-spacing: 2.5%;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: -1%;
+  }
+
+  p {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: $gray-text;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_head {
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
