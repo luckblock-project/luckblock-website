@@ -1,0 +1,106 @@
+@import "variables";
+@import "mixins";
+
+.contact_us {
+  @include center;
+  justify-content: space-between;
+  padding: 60px;
+
+  .contact_card {
+    @include center;
+    justify-content: flex-start;
+    gap: 14px;
+
+    .icon {
+      width: 64px;
+      height: 64px;
+      background-color: rgb(255 255 255 / 0.2);
+      border-radius: 50%;
+      @include center;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: $neon-green;
+      }
+    }
+
+    .handles {
+      letter-spacing: 0.5px;
+
+      p {
+        font-size: 12px;
+        font-weight: 500;
+        opacity: 0.4;
+      }
+
+      h3 {
+        line-height: 32px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact_us {
+    padding: 60px 0px;
+
+    .contact_card {
+      .icon {
+        width: 48px;
+        height: 48px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .handles {
+        h3 {
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_us {
+    flex-direction: column;
+    padding: 30px 0 0 0px;
+    gap: 20px;
+
+    .contact_card {
+      gap: 10px;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .handles {
+        h3 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

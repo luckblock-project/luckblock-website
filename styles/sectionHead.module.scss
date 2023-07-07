@@ -11,9 +11,12 @@
   text-align: center;
 
   strong {
+    font-size: 14px;
+    font-weight: 600;
     color: $neon-green;
     text-transform: uppercase;
-    letter-spacing: 2.5%;
+    letter-spacing: 2px;
+    line-height: 0.5;
   }
 
   h2 {
@@ -32,6 +35,10 @@
 
 @media screen and (max-width: 768px) {
   .section_head {
+    strong {
+      font-size: 12px;
+    }
+
     h2 {
       font-size: 24px;
     }
