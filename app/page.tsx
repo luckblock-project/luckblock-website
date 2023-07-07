@@ -1,4 +1,5 @@
 import Badge from "@/components/badge";
+import ContactUs from "@/components/home/contactUs";
 import { OurToken } from "@/components/home/ourToken";
 import { Solutions } from "@/components/home/solutions";
 import { AngleRightIcon, PlayIcon } from "@/components/icons";
@@ -71,6 +72,15 @@ export default function Home(): JSX.Element {
           className={styles.section_head}
         />
         <OurToken />
+      </section>
+      <section id="contact-us" className={styles.contact_section}>
+        <SectionHead
+          title="Contact Us"
+          subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting"
+          tag="JOIN US"
+          className={styles.section_head}
+        />
+        <ContactUs />
       </section>
     </main>
   );
