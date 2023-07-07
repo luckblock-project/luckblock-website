@@ -8,21 +8,25 @@
   z-index: 1;
   width: 100%;
   padding: 20px 40px;
-  background-color: rgba(0, 0, 0, 0.8);
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 4px 30px rgba(0, 0, 0));
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
 
-  &.scroll {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-
   .desktop_view {
-    display: flex;
+    margin: 0 auto;
+    @include center;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    padding: 8px 10px;
+
+    @media screen and (min-width: 1400px) {
+      max-width: 1400px;
+    }
+
+    @media screen and (max-width: 1400px) {
+      max-width: 100%;
+    }
 
     .logo {
       flex: 0.2;
@@ -86,9 +90,18 @@
 
     .mobile_view {
       width: 100%;
-      display: flex;
+      @include center;
       justify-content: space-between;
-      align-items: center;
+
+      .mobile_logo {
+        flex: 0.2;
+        margin-right: auto;
+
+        img {
+          width: 140px;
+          height: auto;
+        }
+      }
 
       .mobile_nav_content {
         @include center(column);
