@@ -5,7 +5,7 @@ export default function Badge({
   className = "",
 }: {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }): JSX.Element {
   return <span className={`${styles.badge} ${className}`}>{children}</span>;
 }

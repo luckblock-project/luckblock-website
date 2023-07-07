@@ -1,6 +1,7 @@
 import Badge from "@/components/badge";
 import ContactUs from "@/components/home/contactUs";
 import { OurToken } from "@/components/home/ourToken";
+import Roadmap from "@/components/home/roadmap";
 import { Solutions } from "@/components/home/solutions";
 import { AngleRightIcon, PlayIcon } from "@/components/icons";
 import { SectionHead } from "@/components/sectionHead";
@@ -72,6 +73,15 @@ export default function Home(): JSX.Element {
           className={styles.section_head}
         />
         <OurToken />
+      </section>
+      <section id="roadmap" className={styles.roadmap_section}>
+        <SectionHead
+          title="Explore our Roadmap"
+          subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+          tag="ROADMAP"
+          className={styles.section_head}
+        />
+        <Roadmap />
       </section>
       <section id="contact-us" className={styles.contact_section}>
         <SectionHead

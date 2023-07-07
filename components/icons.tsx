@@ -483,3 +483,122 @@ export function GithubIcon({
     </svg>
   );
 }
+
+/**
+ * @requires Requires `fill` property to be set to some color either through `className` or css property of `svg` tag
+ */
+export function RoundTickIcon({
+  className = "",
+  key = "",
+  id = "",
+}: {
+  className?: string;
+  key?: string;
+  id?: string;
+}): JSX.Element {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      key={key}
+      id={id}
+    >
+      <path
+        d="M9 10L12.2581 12.4436C12.6766 12.7574 13.2662 12.6957 13.6107 12.3021L20 5"
+        stroke="inherit"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M21 12C21 13.8805 20.411 15.7137 19.3156 17.2423C18.2203 18.7709 16.6736 19.9179 14.893 20.5224C13.1123 21.1268 11.187 21.1583 9.38744 20.6125C7.58792 20.0666 6.00459 18.9707 4.85982 17.4789C3.71505 15.987 3.06635 14.174 3.00482 12.2945C2.94329 10.415 3.47203 8.56344 4.51677 6.99987C5.56152 5.4363 7.06979 4.23925 8.82975 3.57685C10.5897 2.91444 12.513 2.81996 14.3294 3.30667"
+        stroke="inherit"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+/**
+ * @requires Requires `fill` property to be set to some color either through `className` or css property of `svg` and `path` tag
+ */
+export function RightArrowIcon({
+  className = "",
+  key = "",
+  id = "",
+}: {
+  className?: string;
+  key?: string;
+  id?: string;
+}): JSX.Element {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      key={key}
+      id={id}
+    >
+      <rect
+        opacity="0.3"
+        x="6.66666"
+        y="17.3333"
+        width="2.66667"
+        height="18.6667"
+        rx="1"
+        transform="rotate(-90 6.66666 17.3333)"
+        fill="white"
+      />
+      <path
+        d="M15.0572 23.0572C14.5365 23.5779 14.5365 24.4221 15.0572 24.9428C15.5779 25.4635 16.4221 25.4635 16.9428 24.9428L24.9428 16.9428C25.4476 16.438 25.4653 15.6252 24.9829 15.099L17.6495 7.09901C17.152 6.55619 16.3085 6.51952 15.7657 7.01711C15.2229 7.5147 15.1862 8.35812 15.6838 8.90095L22.1545 15.9599L15.0572 23.0572Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
+
+/**
+ * @requires Requires `fill` property to be set to some color either through `className` or css property of `svg` and `path` tag
+ */
+export function LeftArrowIcon({
+  className = "",
+  key = "",
+  id = "",
+}: {
+  className?: string;
+  key?: string;
+  id?: string;
+}): JSX.Element {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      key={key}
+      id={id}
+    >
+      <rect
+        opacity="0.3"
+        width="2.66667"
+        height="18.6667"
+        rx="1"
+        transform="matrix(0 -1 -1 0 25.3333 17.3333)"
+        fill="#383640"
+      />
+      <path
+        d="M16.9428 23.0572C17.4635 23.5779 17.4635 24.4221 16.9428 24.9428C16.4221 25.4635 15.5779 25.4635 15.0572 24.9428L7.0572 16.9428C6.55243 16.438 6.53477 15.6252 7.01713 15.099L14.3505 7.09901C14.8481 6.55619 15.6915 6.51952 16.2343 7.01711C16.7771 7.5147 16.8138 8.35812 16.3162 8.90095L9.84552 15.9599L16.9428 23.0572Z"
+        fill="#383640"
+      />
+    </svg>
+  );
+}

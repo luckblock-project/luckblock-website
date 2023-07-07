@@ -1,0 +1,25 @@
+.rec {
+  .rec-dot {
+    display: none;
+  }
+
+  .rec-arrow {
+    display: none;
+  }
+
+  .rec-swipable {
+    gap: 30px;
+
+    @media screen and (max-width: 441px) {
+      gap: 0px;
+    }
+  }
+
+  .rec-carousel-item {
+    min-width: 400px;
+
+    @media screen and (max-width: 441px) {
+      min-width: 300px;
+    }
+  }
+}

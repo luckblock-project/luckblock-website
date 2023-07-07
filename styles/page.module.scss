@@ -178,7 +178,20 @@
     }
 
     @media screen and (max-width: 768px) {
-        padding: 40px 20px;
+      padding: 40px 20px;
+    }
+  }
+
+  .roadmap_section {
+    width: 100%;
+    padding: 0 20px;
+
+    @media screen and (max-width: 998px) {
+      padding: 0 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 0px;
     }
   }
 }
