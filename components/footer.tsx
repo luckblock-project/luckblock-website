@@ -32,22 +32,22 @@ export default function Footer(): JSX.Element {
           </div>
         </div>
         <div className={styles.links_cols}>
-          <div className={styles.links}>
-            <h4 className={styles.block_header}>COMPANY</h4>
-            <div className={styles.links_list}>
-              <Link href="/about">About</Link>
-              <Link href="/about">About</Link>
-              <Link href="/about">About</Link>
-              <Link href="/about">About</Link>
-            </div>
-          </div>
           <div>
             <h4 className={styles.block_header}>COMPANY</h4>
             <div className={styles.links_list}>
               <Link href="/about">About</Link>
-              <Link href="/about">About</Link>
-              <Link href="/about">About</Link>
-              <Link href="/about">About</Link>
+              <Link href="/solutions">Solutions</Link>
+              <Link href="/roadmap">Roadmap</Link>
+              <Link href="/career">Career</Link>
+            </div>
+          </div>
+          <div>
+            <h4 className={styles.block_header}>HELP</h4>
+            <div className={styles.links_list}>
+              <Link href="/about">Customer Support</Link>
+              <Link href="/about">Privacy Policy</Link>
+              <Link href="/about">Terms & Conditions</Link>
+              <Link href="/about">Cookies Policy</Link>
             </div>
           </div>
         </div>

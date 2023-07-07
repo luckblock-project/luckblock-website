@@ -67,18 +67,15 @@
       gap: 52px;
       min-width: 20%;
 
-      .links {
-        width: 50%;
-        &_list {
-          display: flex;
-          flex-direction: column;
-          gap: 18px;
+      .links_list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
 
-          a {
-            letter-spacing: 0.3px;
-            cursor: pointer;
-            transition: color 0.3s ease-in-out;
-          }
+        a {
+          font-size: 14px;
+          letter-spacing: 0.3px;
+          cursor: pointer;
         }
       }
     }
@@ -111,7 +108,7 @@
       button {
         width: fit-content;
         padding: 12px 20px;
-        border-radius: 8px;
+        border-radius: 5px;
         border: none;
         color: $black-text;
         background-color: $neon-green;
@@ -151,8 +148,21 @@
 
       .links_cols {
         min-width: 100%;
+        align-items: flex-start;
         justify-content: flex-start;
-        gap: 0;
+
+        div {
+          width: 50%;
+
+          .links_list {
+            width: 100%;
+            gap: 16px;
+
+            a {
+              font-size: 12px;
+            }
+          }
+        }
       }
 
       .form {
@@ -176,10 +186,8 @@
       text-align: center;
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .footer {
+  @media screen and (max-width: 768px) {
     padding: 30px 20px;
   }
 }
