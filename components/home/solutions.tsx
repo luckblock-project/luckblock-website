@@ -38,8 +38,8 @@ export function Solutions(): JSX.Element {
           className={styles.solution_image}
           src={solutions[0].img}
           alt={solutions[0].underline}
-          width={400}
-          height={460}
+          width={900}
+          height={960}
           quality={100}
         />
         <div className={styles.solution_content}>

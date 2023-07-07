@@ -2,12 +2,12 @@
 @import "mixins";
 
 .solutions {
-  padding: 20px;
+  padding: 40px 20px;
 
   .solution_row {
-    display: flex;
-    align-items: center;
+    @include center;
     justify-content: space-between;
+    padding: 20px 0;
 
     &:nth-child(even) {
       flex-direction: row-reverse;
@@ -15,6 +15,7 @@
 
     .solution_image {
       width: 50%;
+      height: auto;
     }
 
     .solution_content {
@@ -52,22 +53,22 @@
   }
 
   @media screen and (max-width: 998px) {
+    padding: 40px 0;
+
     .solution_row {
       .solution_image {
-        width: 100%;
-        padding: 0;
-        width: 300px;
+        width: 60%;
         height: auto;
       }
 
       .solution_content {
-        width: 100%;
+        width: 40%;
         gap: 18px;
         padding: 0;
         align-items: center;
 
         h3 {
-          font-size: 28px;
+          font-size: 24px;
           text-align: center;
 
           .solution_underline_text:after {
@@ -77,16 +78,16 @@
         }
 
         p {
+          font-size: 16px;
+          line-height: 20px;
           text-align: center;
         }
       }
     }
   }
-}
 
-@media screen and (max-width: 767px) {
-  .solutions {
-    padding: 20px;
+  @media screen and (max-width: 767px) {
+    padding: 0;
 
     .solution_row {
       flex-direction: column;
@@ -96,20 +97,20 @@
       }
 
       .solution_image {
-        width: 100%;
-        padding: 0;
-        width: 260px;
+        width: 240px;
         height: auto;
       }
 
       .solution_content {
+        width: 100%;
+
         h3 {
-          font-size: 24px;
+          font-size: 18px;
         }
 
         p {
-          font-size: 16px;
-          line-height: 20px;
+          font-size: 12px;
+          line-height: 16px;
         }
       }
     }
