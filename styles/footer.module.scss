@@ -1,5 +1,185 @@
-import styles from "@/styles/navbar.module.scss";
+@import "variables";
+@import "mixins";
 
-export default function Navbar(): JSX.Element {
-  return <nav className={styles.navbar}></nav>;
+.footer {
+  @include center(column);
+  padding: 30px 40px;
+
+  & > div {
+    @include center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+
+    .company {
+      @include center(column);
+      align-items: flex-start;
+      gap: 30px;
+      max-width: 30%;
+
+      img {
+        width: 200px;
+        height: auto;
+      }
+
+      p {
+        line-height: 26px;
+        color: $gray-text;
+        line-height: 28px;
+      }
+
+      div {
+        @include center;
+
+        a {
+          @include center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background-color: $light-black;
+          margin-right: 10px;
+
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+            transition: fill 0.3s ease-in-out;
+
+            &:hover {
+              fill: $neon-green;
+            }
+          }
+        }
+      }
+    }
+
+    .block_header {
+      color: $gray-text;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 10px;
+      margin-bottom: 24px;
+    }
+
+    .links_cols {
+      @include center;
+      justify-content: space-between;
+      gap: 52px;
+      min-width: 20%;
+
+      .links {
+        width: 50%;
+        &_list {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+
+          a {
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .form {
+      @include center(column);
+      align-items: flex-start;
+      justify-content: flex-start;
+      min-width: 30%;
+
+      input {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        border-radius: 4px;
+        border: 1px solid $light-black;
+        background-color: $light-black;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        transition: border-color 0.3s ease-in-out;
+
+        &:focus {
+          border-color: $neon-green;
+          outline: none;
+        }
+      }
+
+      button {
+        width: fit-content;
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: none;
+        color: $black-text;
+        background-color: $neon-green;
+        font-weight: 600;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 30px;
+
+      .company {
+        align-items: flex-start;
+        max-width: 100%;
+        gap: 20px;
+
+        img {
+          width: 150px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        div {
+          a {
+            width: 30px;
+            height: 30px;
+
+            svg {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+
+      .links_cols {
+        min-width: 100%;
+        justify-content: flex-start;
+        gap: 0;
+      }
+
+      .form {
+        min-width: 100%;
+      }
+    }
+  }
+
+  & > hr {
+    width: 100%;
+    height: 1px;
+    background-color: $light-black;
+    opacity: 0.2;
+    margin-bottom: 30px;
+  }
+
+  & > p {
+    font-size: 14px;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 20px;
+  }
 }
