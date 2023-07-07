@@ -2,8 +2,17 @@
 @import "mixins";
 
 .our_token {
+  margin: 0 auto;
   @include center;
-  padding: 40px;
+  padding: 40px 0 0;
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1400px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    max-width: 100%;
+  }
 
   .content {
     @include center(column);
@@ -78,19 +87,64 @@
   }
 
   .image {
+    @include center;
     flex: 0.5;
-    max-height: 400px;
 
     img {
-      margin-top: -160px;
-      width: 120%;
+      margin-top: -120px;
+      width: 600px;
       height: auto;
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .our_token {
+  @media screen and (max-width: 1098px) {
+    .content {
+      h3 {
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+
+    .image {
+      flex: 0.5;
+
+      img {
+        margin-top: -160px;
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 968px) {
+    .content {
+      flex: 0.7;
+
+      h3 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .token_features {
+        .feature {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .image {
+      flex: 0.5;
+      margin-left: -100px;
+
+      img {
+        margin-top: -100px;
+        width: 340px;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     padding: 20px;
     flex-direction: column-reverse;
 
@@ -101,9 +155,8 @@
       gap: 18px;
 
       h3 {
-        font-size: 32px;
-        line-height: 40px;
-        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
 
         .title_underline:after {
           transform: scaleX(0.65);
@@ -153,12 +206,12 @@
     }
 
     .image {
-      width: 100%;
-      max-height: 300px;
+      flex: 1;
+      margin-left: 0;
 
       img {
         margin-top: -60px;
-        width: 100%;
+        width: 280px;
         height: auto;
       }
     }
