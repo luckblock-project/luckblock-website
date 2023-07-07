@@ -44,7 +44,7 @@ export default function Navbar(): JSX.Element {
   };
 
   return (
-    <nav className={`${styles.navbar} page`}>
+    <nav className={`${styles.navbar}`}>
       <div className={styles.desktop_view}>
         <div className={styles.logo}>
           <Link href="/">
