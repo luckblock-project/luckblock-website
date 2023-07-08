@@ -278,6 +278,10 @@
     @media screen and (max-width: 768px) {
       padding: 40px 20px;
     }
+
+    @media  (max-width: 425px) {
+      border-radius: 5px;
+    }
   }
 
   .roadmap_section {
