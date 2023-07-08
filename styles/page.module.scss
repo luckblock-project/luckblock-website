@@ -12,28 +12,20 @@
 
   .hero {
     width: 100%;
-    min-height: 80vh;
+    height: 662px;
     padding: 20px 0px 20px 60px;
     border-radius: 24px;
     background-image: url("../public/hero-bg.png");
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    @include center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
 
-    &_image {
-      border-radius: 24px;
-      order: 2;
-      flex: 0.7;
-      min-height: 500px;
-      background-image: url("../public/hero-robo.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &_content {
-      order: 1;
+    .hero_content {
       flex: 0.5;
       height: 100%;
       display: flex;
@@ -52,6 +44,7 @@
           size: 46px;
           weight: 600;
         }
+
         letter-spacing: -1px;
       }
 
@@ -107,25 +100,49 @@
         }
       }
     }
+
+    .hero_image {
+      flex: 0.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: contain;
+      position: relative;
+
+      img {
+        z-index: 2;
+        max-width: 672px;
+        max-height: 672px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .image_glow {
+        z-index: 1;
+        height: 70%;
+        width: 70%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border-radius: 100%;
+        background: rgba(97, 204, 0, 0.50);
+        filter: blur(130px);
+      }
+    }
   }
 
   @media (max-width: 1096px) {
-    gap: 60px;
-    padding: 60px 0px 20px;
 
     .hero {
-      padding: 0 0 0 30px;
+      height: 562px;
+      padding: 20px 0px 20px 40px;
 
-      &_image {
-        flex: 0.8;
-        margin-left: -180px;
-        height: 300px;
-        background-position: top right;
-      }
-
-      &_content {
-        flex: 0.4;
-        gap: 10px;
+      .hero_content {
+        flex: 0.5;
 
         h1 {
           font-size: 32px;
@@ -141,36 +158,21 @@
           font-size: 14px;
         }
       }
+
+      .hero_image {
+        flex: 0.5;
+      }
     }
   }
 
-  @media (max-width: 768px) {
-    gap: 20px;
-    padding: 80px 0px 20px;
-
+  @media (max-width: 880px) {
     .hero {
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding: 0 30px 30px;
+      height: fit-content;
 
-      &_image {
-        background-image: url("../public/hero-robo-mobile.png");
-        background-position: top;
-        order: 1;
-        flex: 1;
-        width: 90%;
-        height: 360px;
-        margin: 0 0 -120px 0;
-
-        @media screen and (max-width: 476px) {
-          width: 100%;
-          margin: 0 0 -240px 0;
-        }
-      }
-
-      &_content {
-        order: 2;
-        flex: 2;
-        gap: 10px;
+      .hero_content {
+        // gap: 10px;
         align-items: center;
 
         h1 {
@@ -198,13 +200,23 @@
         .hero_buttons {
           width: 100%;
           flex-direction: column;
-          gap: 10px;
 
           .hero_btn {
             width: 100%;
             padding: 10px 16px;
             font-size: 14px;
           }
+        }
+      }
+
+      .hero_image {
+        img {
+          z-index: 2;
+          max-width: 300px;
+          max-height: 300px;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
         }
       }
     }
