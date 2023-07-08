@@ -47,7 +47,7 @@ export default function Navbar(): JSX.Element {
     <nav className={`${styles.navbar}`}>
       <div className={styles.desktop_view}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/" scroll={false}>
             <Image
               src="/logo.png"
               alt="Blockrover Logo"
@@ -60,19 +60,19 @@ export default function Navbar(): JSX.Element {
         <div className={styles.navlinks}>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" scroll={false}>Home</Link>
             </li>
             <li>
-              <Link href="#solutions">Solutions</Link>
+              <Link href="#solutions" scroll={false}>Solutions</Link>
             </li>
             <li>
-              <Link href="#rover">$ROVER</Link>
+              <Link href="#rover" scroll={false}>$ROVER</Link>
             </li>
             <li>
-              <Link href="#roadmap">Roadmap</Link>
+              <Link href="#roadmap" scroll={false}>Roadmap</Link>
             </li>
             <li>
-              <Link href="#contact-us">Contact Us</Link>
+              <Link href="#contact-us" scroll={false}>Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -83,7 +83,7 @@ export default function Navbar(): JSX.Element {
       </div>
       <div className={styles.mobile_view}>
         <div className={styles.mobile_logo}>
-          <Link href="#">
+          <Link href="/" scroll={false}>
             <Image
               src="/logo.png"
               alt="Blockrover Logo"
@@ -99,19 +99,19 @@ export default function Navbar(): JSX.Element {
           <div className={styles.mobile_nav_content}>
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" scroll={false}>Home</Link>
               </li>
               <li>
-                <Link href="#solutions">Solutions</Link>
+                <Link href="#solutions" scroll={false}>Solutions</Link>
               </li>
               <li>
-                <Link href="#rover">$ROVER</Link>
+                <Link href="#rover" scroll={false}>$ROVER</Link>
               </li>
               <li>
-                <Link href="#roadmap">Roadmap</Link>
+                <Link href="#roadmap" scroll={false}>Roadmap</Link>
               </li>
               <li>
-                <Link href="#contact-us">Contact Us</Link>
+                <Link href="#contact-us" scroll={false}>Contact Us</Link>
               </li>
             </ul>
             <div className={styles.signup_login}>

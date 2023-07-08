@@ -8,10 +8,8 @@
   z-index: 1;
   width: 100%;
   padding: 20px 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter: drop-shadow(0 4px 30px rgba(0, 0, 0));
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: #18171c;
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.3));
   transition: all 0.3s ease-in-out;
 
   .desktop_view {
@@ -35,6 +33,7 @@
       img {
         width: 180px;
         height: auto;
+        mix-blend-mode: screen;
       }
     }
 
@@ -67,6 +66,7 @@
       border-radius: 4px;
       padding: 8px 14px;
       background-color: $neon-green;
+
       font: {
         size: 14px;
         weight: 500;
@@ -112,6 +112,7 @@
         img {
           width: 140px;
           height: auto;
+          mix-blend-mode: screen;
         }
       }
 
