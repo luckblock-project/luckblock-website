@@ -75,10 +75,22 @@
       &:nth-child(1) {
         color: #fff;
         background-color: $light-black;
+
+        &:hover {
+          color: $neon-green;
+          background-color: transparent;
+          border: 2px solid $neon-green;
+        }
       }
 
       &:nth-child(2) {
         color: #000;
+
+        &:hover {
+          color: $neon-green;
+          background-color: transparent;
+          border: 2px solid $neon-green;
+        }
       }
     }
   }

@@ -78,6 +78,13 @@
 
           &:nth-child(1) {
             color: $black-text;
+
+            &:hover {
+              color: $neon-green;
+              background-color: transparent;
+              fill: $neon-green;
+              border: 2px solid $neon-green;
+            }
           }
 
           &:nth-child(2) {
@@ -89,6 +96,12 @@
             svg {
               width: 14px;
               height: 14px;
+            }
+
+            &:hover {
+              color: $black-text;
+              background-color: $neon-green;
+              fill: $black-text;
             }
           }
         }

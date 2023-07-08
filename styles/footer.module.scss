@@ -109,10 +109,15 @@
         width: fit-content;
         padding: 12px 20px;
         border-radius: 5px;
-        border: none;
         color: $black-text;
         background-color: $neon-green;
         font-weight: 600;
+
+        &:hover {
+          color: $neon-green;
+          background-color: transparent;
+          border: 2px solid $neon-green;
+        }
       }
     }
 

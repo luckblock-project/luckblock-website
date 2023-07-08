@@ -22,6 +22,17 @@
         width: 32px;
         height: 32px;
         fill: $neon-green;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &:hover {
+      .icon {
+        background-color: $neon-green;
+
+        svg {
+          fill: #fff;
+        }
       }
     }
 
