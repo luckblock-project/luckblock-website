@@ -11,3 +11,16 @@
         }
     }
 }
+
+@mixin bob() {
+    animation: bob 1s ease-in-out infinite alternate;
+    
+    @keyframes bob {
+        from {
+            transform: translateY(10px);
+        }
+        to {
+            transform: translateY(0px);
+        }
+    }
+}

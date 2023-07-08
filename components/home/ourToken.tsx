@@ -2,6 +2,8 @@ import styles from "@/styles/ourToken.module.scss";
 import Image from "next/image";
 import { CopyIcon, EthereumIcon, ExpanceIcon, TickIcon } from "../icons";
 import { UnderlineText } from "../underlineText";
+import TokenImage from "../../public/token.png";
+import TokenGlowImage from "../../public/token-glow.png";
 
 export function OurToken(): JSX.Element {
   return (
@@ -56,12 +58,14 @@ export function OurToken(): JSX.Element {
       </div>
       <div className={styles.image}>
         <Image
-          src="/token.png"
+          src={TokenImage}
           alt="$ROVER Token"
-          width={500}
-          height={500}
-          quality={100}
+          className={styles.image_token}
         />
+        <Image
+          src={TokenGlowImage}
+          alt="Token Glow"
+          className={styles.image_glow} />
       </div>
     </div>
   );
