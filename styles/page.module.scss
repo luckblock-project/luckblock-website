@@ -242,6 +242,7 @@
     padding: 150px 40px 80px 40px;
     background-color: $black-section-bg;
     position: relative;
+    overflow: hidden;
 
     .curvedSectionDiv {
       height: 50px;
@@ -267,6 +268,7 @@
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+    overflow: hidden;
 
     @media screen and (max-width: 998px) {
       padding: 60px;
@@ -281,6 +283,7 @@
   .roadmap_section {
     width: 100%;
     padding: 100px 40px;
+    overflow: hidden;
 
     @media screen and (max-width: 768px) {
       padding: 60px 40px;
