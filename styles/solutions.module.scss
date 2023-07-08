@@ -4,6 +4,7 @@
 .solutions {
   @include center(column);
   padding: 0px 20px;
+  padding-top: 80px;
   gap: 20px;
 
   .solution_row {
@@ -69,11 +70,9 @@
         width: 40%;
         gap: 18px;
         padding: 0;
-        // align-items: center;
 
         h3 {
           font-size: 24px;
-          // text-align: center;
 
           .solution_underline_text:after {
             transform: scaleX(0.8);
@@ -84,14 +83,12 @@
         p {
           font-size: 16px;
           line-height: 20px;
-          // text-align: center;
         }
       }
     }
   }
 
   @media screen and (max-width: 767px) {
-    padding: 0;
     gap: 40px;
 
     .solution_row {
