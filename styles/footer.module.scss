@@ -77,6 +77,10 @@
           font-size: 14px;
           letter-spacing: 0.3px;
           cursor: pointer;
+
+          &:hover {
+            color: $neon-green;
+          }
         }
       }
     }
@@ -113,6 +117,7 @@
         color: $black-text;
         background-color: $neon-green;
         font-weight: 600;
+        cursor: pointer;
 
         &:hover {
           color: $neon-green;

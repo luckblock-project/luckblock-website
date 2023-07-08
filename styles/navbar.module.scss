@@ -48,6 +48,10 @@
 
         li {
           margin: 0 14px;
+
+          &:hover {
+            color: $neon-green;
+          }
         }
       }
     }
