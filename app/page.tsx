@@ -59,6 +59,7 @@ export default function Home(): JSX.Element {
       </section>
       {/* ROVER */}
       <section id="rover" className={styles.token_section}>
+        <div className={styles.curvedSectionDiv} />
         <SectionHead
           title="Our Token"
           subTitle="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"

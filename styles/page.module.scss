@@ -8,12 +8,12 @@
   align-items: center;
   min-height: 100vh;
   padding: 100px 0 40px;
-  gap: 80px;
 
   .hero {
     width: 100%;
     height: 662px;
     padding: 20px 0px 20px 60px;
+    margin-bottom: 100px;
     border-radius: 24px;
     background-image: url("../public/hero-bg.png");
     background-size: cover;
@@ -172,7 +172,6 @@
       height: fit-content;
 
       .hero_content {
-        // gap: 10px;
         align-items: center;
 
         h1 {
@@ -222,19 +221,39 @@
     }
   }
 
-  .section_head {
-    width: 580px;
+  @media (max-width: 425px) {
+    padding: 90px 0 40px;
 
-    @media screen and (max-width: 768px) {
-      width: 100%;
+    .hero {
+      margin-bottom: 60px;
+      border-radius: 5px;
     }
+  }
+
+  .section_head {
+    max-width: 580px;
+
+    // @media screen and (max-width: 768px) {
+    //   width: 100%;
+    // }
   }
 
   .token_section {
     width: 100vw;
     padding: 40px 120px;
     background-color: $black-section-bg;
-    // clip-path: ellipse(100% -20% at 0% 0%);
+    position: relative;
+
+    .curvedSectionDiv {
+      height: 50px;
+      width: 100vw;
+      border-bottom-left-radius: 50% 100%;
+      border-bottom-right-radius: 50% 100%;
+      background-color: #18171c;
+      position: absolute;
+      left: 0px;
+      top: 0px
+    }
 
     @media screen and (max-width: 768px) {
       padding: 40px 20px;

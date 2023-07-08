@@ -2,12 +2,13 @@
 @import "mixins";
 
 .solutions {
-  padding: 40px 20px;
+  @include center(column);
+  padding: 0px 20px;
+  gap: 20px;
 
   .solution_row {
     @include center;
     justify-content: space-between;
-    padding: 20px 0;
 
     &:nth-child(even) {
       flex-direction: row-reverse;
@@ -68,11 +69,11 @@
         width: 40%;
         gap: 18px;
         padding: 0;
-        align-items: center;
+        // align-items: center;
 
         h3 {
           font-size: 24px;
-          text-align: center;
+          // text-align: center;
 
           .solution_underline_text:after {
             transform: scaleX(0.8);
@@ -83,7 +84,7 @@
         p {
           font-size: 16px;
           line-height: 20px;
-          text-align: center;
+          // text-align: center;
         }
       }
     }
@@ -91,6 +92,7 @@
 
   @media screen and (max-width: 767px) {
     padding: 0;
+    gap: 40px;
 
     .solution_row {
       flex-direction: column;
@@ -100,20 +102,24 @@
       }
 
       .solution_image {
-        width: 240px;
+        max-width: 340px;
+        width: 100%;
         height: auto;
       }
 
       .solution_content {
         width: 100%;
+        align-items: center;
 
         h3 {
           font-size: 18px;
+          text-align: center;
         }
 
         p {
           font-size: 12px;
           line-height: 16px;
+          text-align: center;
         }
       }
     }
