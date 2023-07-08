@@ -1,4 +1,5 @@
 @import "variables";
+@import "animations";
 @import "mixins";
 
 .home_page {
@@ -119,6 +120,7 @@
       }
 
       .image_glow {
+        @include glow;
         z-index: 1;
         height: 70%;
         width: 70%;

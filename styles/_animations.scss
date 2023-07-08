@@ -1,0 +1,13 @@
+@mixin glow() {
+    animation: glow 1s ease-in-out infinite alternate;
+
+    @keyframes glow {
+        from {
+            opacity: 0.5;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
