@@ -3,7 +3,7 @@
 import "@/styles/carousel.scss";
 import styles from "@/styles/roadmap.module.scss";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import Badge from "../badge";
 import { LeftArrowIcon, RightArrowIcon } from "../icons";
@@ -18,6 +18,9 @@ export default function Roadmap(): JSX.Element {
   ];
 
   const carouselRef = React.useRef<Carousel>(null);
+
+  const [prevIsDisabled, setPrevIsDisabled] = useState(true);
+  const [nextIsDisabled, setNextIsDisabled] = useState(false);
 
   function handleCarouselButtonLeftClick() {
     if (carouselRef.current) {
@@ -44,12 +47,14 @@ export default function Roadmap(): JSX.Element {
             <button
               className={styles.carousel_button_left}
               onClick={handleCarouselButtonLeftClick}
+              disabled={prevIsDisabled}
             >
               <LeftArrowIcon />
             </button>
             <button
               className={styles.carousel_button_right}
               onClick={handleCarouselButtonRightClick}
+              disabled={nextIsDisabled}
             >
               <RightArrowIcon />
             </button>
@@ -58,6 +63,15 @@ export default function Roadmap(): JSX.Element {
           <Carousel
             breakPoints={breakPoints}
             focusOnSelect={true}
+            renderArrow={({ type, onClick, isEdge }) => {
+              if (type === 'PREV') {
+                isEdge ? setPrevIsDisabled(true) : setPrevIsDisabled(false);
+              }
+              if (type === 'NEXT') {
+                isEdge ? setNextIsDisabled(true) : setNextIsDisabled(false);
+              }
+              return <></>
+            }}
             ref={carouselRef}
           >
             <div className={styles.card} key="1">
