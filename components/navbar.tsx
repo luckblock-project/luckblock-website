@@ -85,8 +85,8 @@ export default function Navbar(): JSX.Element {
           </ul>
         </div>
         <div className={styles.signup_login}>
-          <Link href="/login">Login</Link>
-          <Link href="/sign-up">Sign Up</Link>
+          <Link href="https://litepaper.blockroverproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
+          <Link href="https://linktr.ee/blockrover" target="_blank" rel="noreferrer">Linktree</Link>
         </div>
       </div>
       <div className={styles.mobile_view}>
@@ -123,8 +123,8 @@ export default function Navbar(): JSX.Element {
               </li>
             </ul>
             <div className={styles.signup_login}>
-              <Link href="/login">Login</Link>
-              <Link href="/sign-up">Sign Up</Link>
+              <Link href="https://litepaper.blockroverproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
+              <Link href="https://linktr.ee/blockrover" target="_blank" rel="noreferrer">Linktree</Link>
             </div>
           </div>
         </div>
