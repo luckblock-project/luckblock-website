@@ -36,10 +36,7 @@ export default function Home(): JSX.Element {
           </p>
           <div className={styles.hero_buttons}>
             <Link className={styles.hero_btn} href="/">
-              Get Started <AngleRightIcon />
-            </Link>
-            <Link className={styles.hero_btn} href="/">
-              <PlayIcon /> See how it works
+              BETA <AngleRightIcon />
             </Link>
           </div>
         </div>

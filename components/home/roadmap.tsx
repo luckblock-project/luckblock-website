@@ -106,32 +106,6 @@ export default function Roadmap(): JSX.Element {
                   </div>
                 </div>
               </div>
-              <hr />
-              <div className={styles.content_box}>
-                <Badge className={styles.task_badge}>
-                  <span>Q1</span>
-                  <span></span>
-                  <span>2023</span>
-                </Badge>
-                <div className={styles.content}>
-                  <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className={styles.card} key="2">
               <div className={styles.title}>
@@ -140,32 +114,6 @@ export default function Roadmap(): JSX.Element {
                 </p>
                 <strong>Environment Development</strong>
               </div>
-              <div className={styles.content_box}>
-                <Badge className={styles.task_badge}>
-                  <span>Q1</span>
-                  <span></span>
-                  <span>2023</span>
-                </Badge>
-                <div className={styles.content}>
-                  <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
-                  </div>
-                </div>
-              </div>
-              <hr />
               <div className={styles.content_box}>
                 <Badge className={styles.task_badge}>
                   <span>Q1</span>
@@ -224,32 +172,6 @@ export default function Roadmap(): JSX.Element {
                   </div>
                 </div>
               </div>
-              <hr />
-              <div className={styles.content_box}>
-                <Badge className={styles.task_badge}>
-                  <span>Q1</span>
-                  <span></span>
-                  <span>2023</span>
-                </Badge>
-                <div className={styles.content}>
-                  <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className={styles.card} key="4">
               <div className={styles.title}>
@@ -258,32 +180,6 @@ export default function Roadmap(): JSX.Element {
                 </p>
                 <strong>Environment Development</strong>
               </div>
-              <div className={styles.content_box}>
-                <Badge className={styles.task_badge}>
-                  <span>Q1</span>
-                  <span></span>
-                  <span>2023</span>
-                </Badge>
-                <div className={styles.content}>
-                  <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
-                  </div>
-                </div>
-              </div>
-              <hr />
               <div className={styles.content_box}>
                 <Badge className={styles.task_badge}>
                   <span>Q1</span>
