@@ -57,7 +57,7 @@ export default function Navbar(): JSX.Element {
         <div className={styles.logo}>
           <Link href="/" scroll={false}>
             <Image
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Blockrover Logo"
               width={240}
               height={60}
