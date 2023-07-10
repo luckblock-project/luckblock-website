@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
       {/* HERO */}
       <Hero />
       {/* OUR SOLUTIONS */}
-      <section id="solutions">
+      <section id="solutions" className={styles.solutions}>
         <SectionHead
           title="Our Solutions"
           subTitle="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
