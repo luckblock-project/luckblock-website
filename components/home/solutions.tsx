@@ -34,8 +34,8 @@ export function Solutions(): JSX.Element {
       img: SdkApiImage,
     },
     {
-      title: "DeFi Sniper",
-      underline: "Bot",
+      title: "DeFi ",
+      underline: "Sniper Bot",
       content:
         "$ROVER's robust Software Development Kits (SDKs) and API Access open up a world of possibilities for developers. Seamlessly integrate blockchain technology into your applications, products, or services with ease, leveraging $ROVER's powerful tools and extensive resources.",
       link: "/",
@@ -45,6 +45,7 @@ export function Solutions(): JSX.Element {
 
   return (
     <div className={styles.solutions}>
+      {/* Token Analyzer */}
       <div className={styles.solution_row}>
         <div className={styles.solution_image_container}>
           <Image
@@ -61,6 +62,7 @@ export function Solutions(): JSX.Element {
           <Link href={solutions[0].link}>Learn More</Link>
         </div>
       </div>
+      {/* AI Audit */}
       <div className={styles.solution_row}>
         <div className={styles.solution_image_container}>
           <Image
@@ -78,6 +80,7 @@ export function Solutions(): JSX.Element {
           <Link href={solutions[1].link}>Learn More</Link>
         </div>
       </div>
+      {/* SDKs & APIs */}
       <div className={styles.solution_row}>
         <div className={styles.solution_image_container}>
           <Image
@@ -93,6 +96,27 @@ export function Solutions(): JSX.Element {
           </h3>
           <p>{solutions[2].content}</p>
           <Link href={solutions[2].link}>Learn More</Link>
+        </div>
+      </div>
+      {/* Sniper Bot */}
+      <div className={styles.solution_row}>
+        <div className={styles.solution_image_container}>
+          <Image
+            className={styles.solution_image}
+            src={solutions[3].img}
+            alt={solutions[3].underline}
+          />
+        </div>
+        <div className={styles.solution_content}>
+          <h3>
+            {solutions[3].title}
+            <UnderlineText
+              className={styles.solution_underline_text}
+              text={solutions[3].underline}
+            />
+          </h3>
+          <p>{solutions[3].content}</p>
+          <Link href={solutions[3].link}>Learn More</Link>
         </div>
       </div>
     </div>
