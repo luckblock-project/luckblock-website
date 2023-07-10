@@ -93,7 +93,7 @@ export default function Navbar(): JSX.Element {
         <div className={styles.mobile_logo}>
           <Link href="/" scroll={false} onClick={closeNavOnScroll}>
             <Image
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Blockrover Logo"
               width={180}
               height={40}
