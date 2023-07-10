@@ -240,6 +240,10 @@
     max-width: 580px;
   }
 
+  .solutions {
+    width: 100%;
+  }
+
   .token_section {
     @include center(column);
     width: 100vw;
