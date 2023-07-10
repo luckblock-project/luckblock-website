@@ -10,7 +10,7 @@ export function OurToken(): JSX.Element {
     <div className={styles.our_token}>
       <div className={styles.content}>
         <h3>
-          New generation <UnderlineText text="$ROVER" className={styles.title_underline} />
+          New generation <UnderlineText text="$ROVER" />
         </h3>
         <p>
           Issue InTen&apos;s smart company cards with individual spending

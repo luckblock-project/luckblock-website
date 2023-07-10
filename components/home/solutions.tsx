@@ -44,11 +44,7 @@ export function Solutions(): JSX.Element {
         />
         <div className={styles.solution_content}>
           <h3>
-            {solutions[0].title}{" "}
-            <UnderlineText
-              className={styles.solution_underline_text}
-              text={solutions[0].underline}
-            />
+            {solutions[0].title} <UnderlineText text={solutions[0].underline} />
           </h3>
           <p>{solutions[0].content}</p>
           <Link href={solutions[0].link}>Learn More</Link>
@@ -65,10 +61,7 @@ export function Solutions(): JSX.Element {
         />
         <div className={styles.solution_content}>
           <h3>
-            <UnderlineText
-              className={styles.solution_underline_text}
-              text={solutions[1].underline}
-            />
+            <UnderlineText text={solutions[1].underline} />
             {solutions[1].title}
           </h3>
           <p>{solutions[1].content}</p>
@@ -86,10 +79,7 @@ export function Solutions(): JSX.Element {
         />
         <div className={styles.solution_content}>
           <h3>
-            <UnderlineText
-              className={styles.solution_underline_text}
-              text={solutions[2].underline}
-            />
+            <UnderlineText text={solutions[2].underline} />
             {solutions[2].title}
           </h3>
           <p>{solutions[2].content}</p>
