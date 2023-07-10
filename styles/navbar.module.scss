@@ -105,13 +105,11 @@
     }
 
     .mobile_view {
-      width: 100%;
       @include center;
       justify-content: space-between;
 
       .mobile_logo {
-        flex: 0.2;
-        margin-right: auto;
+        @include center;
 
         img {
           width: 140px;
@@ -136,5 +134,9 @@
         }
       }
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 20px;
   }
 }
