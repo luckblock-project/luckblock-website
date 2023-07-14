@@ -66,7 +66,7 @@ export default function Footer(): JSX.Element {
         </form>
       </div>
       <hr />
-      <p>© Copyright 2023, All Rights Reserved by Block Rover</p>
+      <p>© Copyright 2023. All Rights Reserved by Block Rover.</p>
     </footer>
   );
 }
