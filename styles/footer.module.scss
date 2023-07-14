@@ -16,7 +16,7 @@
       @include center(column);
       align-items: flex-start;
       gap: 30px;
-      max-width: 30%;
+      // max-width: 30%;
 
       img {
         width: 200px;
@@ -91,7 +91,7 @@
       @include center(column);
       align-items: flex-start;
       justify-content: flex-start;
-      min-width: 30%;
+      min-width: 400px;
 
       input {
         width: 100%;
@@ -171,20 +171,28 @@
       }
 
       .form {
-        width: 60%;
+        min-width: 0px;
+        width: 100%;
       }
     }
 
     @media screen and (max-width: 480px) {
       flex-direction: column;
       gap: 30px;
-
+      
       .company {
+        @include center(column);
+        width: 100%;
         max-width: unset;
 
         div {
+        @include center;
           width: 100%;
         }
+      }
+
+      .form {
+        @include center(column);
       }
     }
   }
