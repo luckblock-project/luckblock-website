@@ -18,9 +18,9 @@ export function SectionHead({
 }): JSX.Element {
   useEffect(() => {
     AOS.init({
-      delay: 100,
-      duration: 600,
-      once: true,
+      delay: 0,
+      duration: 300,
+      once: false,
     });
   });
 
