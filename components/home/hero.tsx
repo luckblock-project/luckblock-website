@@ -30,7 +30,7 @@ export default function Hero(): JSX.Element {
           <Link className={styles.hero_btn} href="/">
             BETA <AngleRightIcon />
           </Link>
-          <Link className={styles.hero_btn} href="https://t.me/blockroverbot">
+          <Link className={styles.hero_btn} href="https://t.me/blockroverbot" target="_blank">
             Telegram Bot <AngleRightIcon />
           </Link>
         </div>

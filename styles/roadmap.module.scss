@@ -107,9 +107,23 @@
         }
 
         strong {
+          position: relative;
           font-size: 18px;
           font-weight: 600;
           line-height: 30px;
+          margin-left: 10px;
+
+          &::before {
+            position: absolute;
+            content: "";
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 7px;
+            width: 7px;
+            background-color: $neon-green;
+            border-radius: 50%;
+          }
         }
       }
 
@@ -126,6 +140,9 @@
           @include hide-scrollbar;
 
           div {
+            min-height: 220px;
+            max-height: 220px;
+
             p {
               position: relative;
               padding: 9px 24px 9px 0;

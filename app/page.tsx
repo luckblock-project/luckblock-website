@@ -14,8 +14,7 @@ export default function Home(): JSX.Element {
       {/* OUR SOLUTIONS */}
       <section id="solutions" className={styles.solutions}>
         <SectionHead
-          title="Our Solutions"
-          subTitle="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+          title="Solutions"
           className={styles.section_head}
         />
         <Solutions />
@@ -24,8 +23,7 @@ export default function Home(): JSX.Element {
       <section id="rover" className={styles.token_section}>
         <div className={styles.curvedSectionDiv} />
         <SectionHead
-          title="Our Token"
-          subTitle="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+          title="$ROVER"
           className={styles.section_head}
         />
         <OurToken />
@@ -34,8 +32,6 @@ export default function Home(): JSX.Element {
       <section id="roadmap" className={styles.roadmap_section}>
         <SectionHead
           title="Explore our Roadmap"
-          subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-          tag="ROADMAP"
           className={styles.section_head}
         />
         <Roadmap />

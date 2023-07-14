@@ -1,9 +1,10 @@
 import styles from "@/styles/ourToken.module.scss";
 import Image from "next/image";
-import { CopyIcon, EthereumIcon, ExpanceIcon, TickIcon } from "../icons";
-import { UnderlineText } from "../underlineText";
-import TokenImage from "../../public/token.png";
 import TokenGlowImage from "../../public/token-glow.png";
+import TokenImage from "../../public/token.png";
+import { TickIcon } from "../icons";
+import { UnderlineText } from "../underlineText";
+import CertikImage from "../../public/certik.svg"
 
 export function OurToken(): JSX.Element {
   return (
@@ -13,9 +14,7 @@ export function OurToken(): JSX.Element {
           New generation <UnderlineText text="$ROVER" />
         </h3>
         <p>
-          Issue InTen&apos;s smart company cards with individual spending
-          limits. Your team can buy what they need, while we sort the paperwork
-          automatically.
+          $ROVER is an erc20 utility token that provides investors access to our suite of tools. 100% of the token revenue goes directly to buying and burning $ROVER. Issue InTen&apos;s smart company cards with individual spending limits. Your team can buy what they need, while we sort the paperwork automatically.
         </p>
         <div className={styles.token_features}>
           <span className={styles.feature}>
@@ -34,15 +33,22 @@ export function OurToken(): JSX.Element {
             <TickIcon />
             <span>Liquidity Providing</span>
           </span>
+          <span className={styles.feature}>
+            <TickIcon />
+            <span>Staking</span>
+          </span>
+          <span className={styles.feature}>
+            <TickIcon />
+            <span>DAO & Governance</span>
+          </span>
         </div>
         <div className={styles.token_stats}>
           <Image
-            src="/certik.png"
-            alt="On Board CERTIK"
-            width={120}
-            height={30}
+            src={CertikImage}
+            alt="CERTIK"
           />
-          <hr />
+          <div className={styles.beacon}/>
+          {/* <hr />
           <div className={styles.stat}>
             <ExpanceIcon />
             <span>0x9c330573849533234634</span>
@@ -53,7 +59,7 @@ export function OurToken(): JSX.Element {
             <EthereumIcon />
             <span>0x9c330573849533234634</span>
             <CopyIcon />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.image}>
