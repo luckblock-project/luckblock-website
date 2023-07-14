@@ -6,6 +6,7 @@
   padding: 0px 20px;
   padding-top: 80px;
   gap: 20px;
+  overflow: hidden;
 
   .solution_row {
     @include center;
