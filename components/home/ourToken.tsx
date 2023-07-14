@@ -12,11 +12,11 @@ export function OurToken(): JSX.Element {
         <h3>
           New generation <UnderlineText text="$ROVER" />
         </h3>
-        <p>
+        {/* <p>
           Issue InTen&apos;s smart company cards with individual spending
           limits. Your team can buy what they need, while we sort the paperwork
           automatically.
-        </p>
+        </p> */}
         <div className={styles.token_features}>
           <span className={styles.feature}>
             <TickIcon />
