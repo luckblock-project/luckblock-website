@@ -48,7 +48,6 @@
 
     .hero_buttons {
       display: flex;
-      flex-direction: column;
       gap: 20px;
 
       .hero_btn {
@@ -208,6 +207,12 @@
     padding: 0px 20px 20px 20px;
     margin-bottom: 60px;
     border-radius: 5px;
+
+    .hero_content {
+      .hero_buttons {
+        flex-direction: column;
+      }
+    }
 
     .hero_image {
       margin-bottom: -20px;
