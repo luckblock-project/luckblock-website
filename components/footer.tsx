@@ -1,7 +1,13 @@
 import styles from "@/styles/footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { GithubIcon, InstagramIcon, TwitterIcon } from "./icons";
+import {
+  BotIcon,
+  LinktreeIcon,
+  MediumIcon,
+  TelegramIcon,
+  TwitterIcon,
+} from "./icons";
 
 export default function Footer(): JSX.Element {
   return (
@@ -15,23 +21,25 @@ export default function Footer(): JSX.Element {
             height={40}
             quality={100}
           />
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
           <div>
-            <Link href="https://twitter.com/">
+            <Link href="https://twitter.com/blockrovereth" target="_blank">
               <TwitterIcon />
             </Link>
-            <Link href="https://instagram.com">
-              <InstagramIcon />
+            <Link href="https://t.me/blockroverentry" target="_blank">
+              <TelegramIcon />
             </Link>
-            <Link href="https://github.com/HeimLabs/blockrover">
-              <GithubIcon />
+            <Link href="https://t.me/blockroverbot" target="_blank">
+              <BotIcon />
+            </Link>
+            <Link href="https://blockrover.medium.com/" target="_blank">
+              <MediumIcon />
+            </Link>
+            <Link href="https://linktr.ee/blockrover" target="_blank">
+              <LinktreeIcon />
             </Link>
           </div>
         </div>
-        <div className={styles.links_cols}>
+        {/* <div className={styles.links_cols}>
           <div>
             <h4 className={styles.block_header}>COMPANY</h4>
             <div className={styles.links_list}>
@@ -50,7 +58,7 @@ export default function Footer(): JSX.Element {
               <Link href="/about">Cookies Policy</Link>
             </div>
           </div>
-        </div>
+        </div> */}
         <form className={styles.form}>
           <h4 className={styles.block_header}>SUBSCRIBE TO NEWSLETTER</h4>
           <input type="email" placeholder="Enter your email" />

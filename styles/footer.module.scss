@@ -6,6 +6,7 @@
   padding: 30px 40px;
 
   & > div {
+    width: 100%;
     @include center;
     justify-content: space-between;
     align-items: flex-start;
@@ -15,7 +16,7 @@
       @include center(column);
       align-items: flex-start;
       gap: 30px;
-      max-width: 30%;
+      // max-width: 30%;
 
       img {
         width: 200px;
@@ -31,6 +32,7 @@
 
       div {
         @include center;
+        flex-wrap: wrap;
 
         a {
           @include center;
@@ -89,7 +91,7 @@
       @include center(column);
       align-items: flex-start;
       justify-content: flex-start;
-      min-width: 30%;
+      min-width: 400px;
 
       input {
         width: 100%;
@@ -128,12 +130,11 @@
     }
 
     @media screen and (max-width: 768px) {
-      flex-direction: column;
-      gap: 30px;
+      gap: 10px;
 
       .company {
+        width: 40%;
         align-items: flex-start;
-        max-width: 100%;
         gap: 20px;
 
         img {
@@ -145,15 +146,8 @@
         }
 
         div {
-          a {
-            width: 30px;
-            height: 30px;
-
-            svg {
-              width: 15px;
-              height: 15px;
-            }
-          }
+          justify-content: flex-start;
+          gap: 4px;
         }
       }
 
@@ -177,7 +171,28 @@
       }
 
       .form {
-        min-width: 100%;
+        min-width: 0px;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 30px;
+      
+      .company {
+        @include center(column);
+        width: 100%;
+        max-width: unset;
+
+        div {
+        @include center;
+          width: 100%;
+        }
+      }
+
+      .form {
+        @include center(column);
       }
     }
   }

@@ -208,6 +208,12 @@
     margin-bottom: 60px;
     border-radius: 5px;
 
+    .hero_content {
+      .hero_buttons {
+        flex-direction: column;
+      }
+    }
+
     .hero_image {
       margin-bottom: -20px;
       img {
