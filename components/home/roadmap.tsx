@@ -2,7 +2,6 @@
 
 import "@/styles/carousel.scss";
 import styles from "@/styles/roadmap.module.scss";
-import Link from "next/link";
 import React, { useState } from "react";
 import Carousel from "react-elastic-carousel";
 import Badge from "../badge";
@@ -38,9 +37,9 @@ export default function Roadmap(): JSX.Element {
 
   return (
     <div className={styles.roadmap}>
-      <Link className={styles.roadmap_full_button} href="/roadmap">
+      {/* <Link className={styles.roadmap_full_button} href="/roadmap">
         Read full version
-      </Link>
+      </Link> */}
       <div className={styles.cards}>
         <div className={styles.carousel}>
           <div className={styles.carousel_buttons}>
@@ -64,13 +63,13 @@ export default function Roadmap(): JSX.Element {
             breakPoints={breakPoints}
             focusOnSelect={true}
             renderArrow={({ type, onClick, isEdge }) => {
-              if (type === 'PREV') {
+              if (type === "PREV") {
                 isEdge ? setPrevIsDisabled(true) : setPrevIsDisabled(false);
               }
-              if (type === 'NEXT') {
+              if (type === "NEXT") {
                 isEdge ? setNextIsDisabled(true) : setNextIsDisabled(false);
               }
-              return <></>
+              return <></>;
             }}
             ref={carouselRef}
           >
@@ -89,20 +88,11 @@ export default function Roadmap(): JSX.Element {
                 </Badge>
                 <div className={styles.content}>
                   <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
+                    <p className={styles.task_done}>BlockRover BETA release</p>
+                    <p className={styles.task_done}>$Rover Uniswap Launch</p>
+                    <p className={styles.task_done}>CoinGecko / CMC Listings</p>
+                    <p className={styles.task_done}>First CEX Listing</p>
+                    <p className={styles.task_done}>Second CEX Listing</p>
                   </div>
                 </div>
               </div>
@@ -110,7 +100,7 @@ export default function Roadmap(): JSX.Element {
             <div className={styles.card} key="2">
               <div className={styles.title}>
                 <p>
-                  <span></span>RDMP 01
+                  <span></span>RDMP 02
                 </p>
                 <strong>Environment Development</strong>
               </div>
@@ -122,20 +112,11 @@ export default function Roadmap(): JSX.Element {
                 </Badge>
                 <div className={styles.content}>
                   <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
+                    <p className={styles.task_done}>Expand BlockRover Team</p>
+                    <p className={styles.task_done}>Global Partnerships</p>
+                    <p className={styles.task_done}>Staking Release</p>
+                    <p className={styles.task_done}>Official v1 release</p>
+                    <p className={styles.task_done}>Block0 Sniper release</p>
                   </div>
                 </div>
               </div>
@@ -143,7 +124,7 @@ export default function Roadmap(): JSX.Element {
             <div className={styles.card} key="3">
               <div className={styles.title}>
                 <p>
-                  <span></span>RDMP 01
+                  <span></span>RDMP 03
                 </p>
                 <strong>Environment Development</strong>
               </div>
@@ -156,52 +137,20 @@ export default function Roadmap(): JSX.Element {
                 <div className={styles.content}>
                   <div>
                     <p className={styles.task_done}>
-                      Block Rover Al prototype release
+                      Third CEX Listing
                     </p>
                     <p className={styles.task_done}>
-                      Block Rover Al prototype release
+                      DAO deployment
                     </p>
                     <p className={styles.task_done}>
-                      Block Rover Al prototype release
+                      Swap deployment
                     </p>
                     <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.card} key="4">
-              <div className={styles.title}>
-                <p>
-                  <span></span>RDMP 01
-                </p>
-                <strong>Environment Development</strong>
-              </div>
-              <div className={styles.content_box}>
-                <Badge className={styles.task_badge}>
-                  <span>Q1</span>
-                  <span></span>
-                  <span>2023</span>
-                </Badge>
-                <div className={styles.content}>
-                  <div>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
+                      Additional EVM chains
                     </p>
                     <p className={styles.task_done}>
-                      Block Rover Al prototype release
+                      Expand Social Media Presence and Marketing
                     </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p className={styles.task_done}>
-                      Block Rover Al prototype release
-                    </p>
-                    <p>Block Rover Al prototype release</p>
-                    <p>Block Rover Al prototype release</p>
                   </div>
                 </div>
               </div>

@@ -33,8 +33,6 @@ export default function Home(): JSX.Element {
       <section id="roadmap" className={styles.roadmap_section}>
         <SectionHead
           title="Explore our Roadmap"
-          subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-          tag="ROADMAP"
           className={styles.section_head}
         />
         <Roadmap />
