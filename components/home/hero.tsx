@@ -19,7 +19,7 @@ export default function Hero(): JSX.Element {
             text="Next-Gen"
             className={styles.hero_content_underline_text}
           />{" "}
-          security and trading tools to elevate your DeFi game
+          security and trading tools to elevate your DeFi experience
         </h1>
         <p>
           Unlock the limitless potential of the blockchain with $ROVER, the
