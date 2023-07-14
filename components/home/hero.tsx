@@ -12,15 +12,14 @@ export default function Hero(): JSX.Element {
       <div className={styles.hero_content}>
         <Badge className={styles.hero_badge}>
           <Image src="./pie.svg" alt="pie icon" height={20} width={20} />
-          New Version Launched
+          Launching on Uniswap 07.20.23
         </Badge>
         <h1 title="$ROVER: Blockchain Innovation">
-          Introducing{" "}
           <UnderlineText
-            text="$ROVER"
+            text="Next-Gen"
             className={styles.hero_content_underline_text}
           />{" "}
-          Unleashing the Power of Blockchain Innovation
+          security and trading tools to elevate your DeFi game
         </h1>
         <p>
           Unlock the limitless potential of the blockchain with $ROVER, the
@@ -30,6 +29,9 @@ export default function Hero(): JSX.Element {
         <div className={styles.hero_buttons}>
           <Link className={styles.hero_btn} href="/">
             BETA <AngleRightIcon />
+          </Link>
+          <Link className={styles.hero_btn} href="https://t.me/blockroverbot">
+            Telegram Bot <AngleRightIcon />
           </Link>
         </div>
       </div>

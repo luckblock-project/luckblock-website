@@ -48,6 +48,7 @@
 
     .hero_buttons {
       display: flex;
+      flex-direction: column;
       gap: 20px;
 
       .hero_btn {
