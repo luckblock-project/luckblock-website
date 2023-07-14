@@ -34,10 +34,10 @@ export function Solutions(): JSX.Element {
       img: SdkApiImage,
     },
     {
-      title: "DeFi ",
-      underline: "Sniper Bot",
+      title: "Automate your trades at lightning speed",
+      underline: "DeFi Sniper Bot: ",
       content:
-        "$ROVER's robust Software Development Kits (SDKs) and API Access open up a world of possibilities for developers. Seamlessly integrate blockchain technology into your applications, products, or services with ease, leveraging $ROVER's powerful tools and extensive resources.",
+        "The most advanced trading bot in DeFi. Trade on our dApp or utilize our Telegram bot directly. Copy trade, channel sniping, anti-rug, limit orders and so much more.",
       link: "/",
       img: DeFiSniperImage,
     },
@@ -109,11 +109,11 @@ export function Solutions(): JSX.Element {
         </div>
         <div className={styles.solution_content}>
           <h3>
-            {solutions[3].title}
             <UnderlineText
               className={styles.solution_underline_text}
               text={solutions[3].underline}
-            />
+              />
+            {solutions[3].title}
           </h3>
           <p>{solutions[3].content}</p>
           <Link href={solutions[3].link}>Learn More</Link>

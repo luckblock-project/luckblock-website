@@ -14,8 +14,7 @@ export default function Home(): JSX.Element {
       {/* OUR SOLUTIONS */}
       <section id="solutions" className={styles.solutions}>
         <SectionHead
-          title="Our Solutions"
-          subTitle="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+          title="Solutions"
           className={styles.section_head}
         />
         <Solutions />
