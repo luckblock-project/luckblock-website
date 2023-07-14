@@ -14,7 +14,7 @@ export function OurToken(): JSX.Element {
           New generation <UnderlineText text="$ROVER" />
         </h3>
         <p>
-          $ROVER is an erc20 utility token that provides investors access to our suite of tools. 100% of the token revenue goes directly to buying and burning $ROVER. Issue InTen&apos;s smart company cards with individual spending limits. Your team can buy what they need, while we sort the paperwork automatically.
+          $ROVER is an erc20 utility token that provides investors access to our suite of tools. 100% of the token revenue goes directly to buying and burning $ROVER.
         </p>
         <div className={styles.token_features}>
           <span className={styles.feature}>
