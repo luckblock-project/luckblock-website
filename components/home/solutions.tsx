@@ -11,7 +11,7 @@ export function Solutions(): JSX.Element {
   const solutions = [
     {
       title: "Empowering Intelligent Decision-Making with",
-      underline: "Token Analyzer",
+      underline: "Token Analyzer: ",
       content:
         "Our token analyzer provides all the info you need to know before aping your next token. Pricing details, contract security, team + marketing data; proprietary holder distro, twitter & community scores and more.",
       link: "/",
@@ -56,7 +56,7 @@ export function Solutions(): JSX.Element {
         </div>
         <div className={styles.solution_content}>
           <h3>
-            {solutions[0].title} <UnderlineText text={solutions[0].underline} />
+            <UnderlineText text={solutions[0].underline} /> {solutions[0].title}
           </h3>
           <p>{solutions[0].content}</p>
           <Link href={solutions[0].link}>Learn More</Link>
