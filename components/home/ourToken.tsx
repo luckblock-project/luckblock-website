@@ -1,9 +1,9 @@
 import styles from "@/styles/ourToken.module.scss";
 import Image from "next/image";
-import { CopyIcon, EthereumIcon, ExpanceIcon, TickIcon } from "../icons";
-import { UnderlineText } from "../underlineText";
-import TokenImage from "../../public/token.png";
 import TokenGlowImage from "../../public/token-glow.png";
+import TokenImage from "../../public/token.png";
+import { TickIcon } from "../icons";
+import { UnderlineText } from "../underlineText";
 
 export function OurToken(): JSX.Element {
   return (
@@ -12,11 +12,9 @@ export function OurToken(): JSX.Element {
         <h3>
           New generation <UnderlineText text="$ROVER" />
         </h3>
-        {/* <p>
-          Issue InTen&apos;s smart company cards with individual spending
-          limits. Your team can buy what they need, while we sort the paperwork
-          automatically.
-        </p> */}
+        <p>
+          $ROVER is an erc20 utility token that provides investors access to our suite of tools. 100% of the token revenue goes directly to buying and burning $ROVER. Issue InTen&apos;s smart company cards with individual spending limits. Your team can buy what they need, while we sort the paperwork automatically.
+        </p>
         <div className={styles.token_features}>
           <span className={styles.feature}>
             <TickIcon />
