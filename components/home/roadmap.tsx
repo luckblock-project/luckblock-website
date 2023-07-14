@@ -75,82 +75,72 @@ export default function Roadmap(): JSX.Element {
           >
             <div className={styles.card} key="1">
               <div className={styles.title}>
-                <p>
-                  <span></span>RDMP 01
-                </p>
-                <strong>Environment Development</strong>
+                {/* <p>
+                  <span></span>Stage 01
+                </p> */}
+                <strong><span></span>Stage 01</strong>
               </div>
               <div className={styles.content_box}>
                 <Badge className={styles.task_badge}>
-                  <span>Q1</span>
+                  <span>Q3</span>
                   <span></span>
                   <span>2023</span>
                 </Badge>
                 <div className={styles.content}>
                   <div>
                     <p className={styles.task_done}>BlockRover BETA release</p>
-                    <p className={styles.task_done}>$Rover Uniswap Launch</p>
-                    <p className={styles.task_done}>CoinGecko / CMC Listings</p>
-                    <p className={styles.task_done}>First CEX Listing</p>
-                    <p className={styles.task_done}>Second CEX Listing</p>
+                    <p>$Rover Uniswap Launch</p>
+                    <p>CoinGecko / CMC Listings</p>
+                    <p>First CEX Listing</p>
+                    <p>Second CEX Listing</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className={styles.card} key="2">
               <div className={styles.title}>
-                <p>
-                  <span></span>RDMP 02
-                </p>
-                <strong>Environment Development</strong>
+                {/* <p>
+                  <span></span>Stage 02
+                </p> */}
+                <strong><span></span>Stage 02</strong>
               </div>
               <div className={styles.content_box}>
                 <Badge className={styles.task_badge}>
-                  <span>Q1</span>
+                  <span>Q4</span>
                   <span></span>
                   <span>2023</span>
                 </Badge>
                 <div className={styles.content}>
                   <div>
-                    <p className={styles.task_done}>Expand BlockRover Team</p>
-                    <p className={styles.task_done}>Global Partnerships</p>
-                    <p className={styles.task_done}>Staking Release</p>
-                    <p className={styles.task_done}>Official v1 release</p>
-                    <p className={styles.task_done}>Block0 Sniper release</p>
+                    <p>Expand BlockRover Team</p>
+                    <p>Global Partnerships</p>
+                    <p>Staking Release</p>
+                    <p>Official v1 release</p>
+                    <p>Block0 Sniper release</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className={styles.card} key="3">
               <div className={styles.title}>
-                <p>
-                  <span></span>RDMP 03
-                </p>
-                <strong>Environment Development</strong>
+                {/* <p>
+                  <span></span>Stage 03
+                </p> */}
+                <strong><span></span>Stage 03</strong>
               </div>
               <div className={styles.content_box}>
                 <Badge className={styles.task_badge}>
                   <span>Q1</span>
                   <span></span>
-                  <span>2023</span>
+                  <span>2024</span>
                 </Badge>
                 <div className={styles.content}>
                   <div>
-                    <p className={styles.task_done}>
-                      Third CEX Listing
-                    </p>
-                    <p className={styles.task_done}>
-                      DAO deployment
-                    </p>
-                    <p className={styles.task_done}>
-                      Swap deployment
-                    </p>
-                    <p className={styles.task_done}>
-                      Additional EVM chains
-                    </p>
-                    <p className={styles.task_done}>
-                      Expand Social Media Presence and Marketing
-                    </p>
+                    <p>Third CEX Listing</p>
+                    <p>DAO deployment</p>
+                    <p>Swap deployment</p>
+                    <p>Additional EVM chains</p>
+                    <p>Expand Social Media Presence and Marketing</p>
                   </div>
                 </div>
               </div>
