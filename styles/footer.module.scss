@@ -130,10 +130,10 @@
     }
 
     @media screen and (max-width: 768px) {
-      justify-content: space-around;
       gap: 10px;
 
       .company {
+        width: 40%;
         align-items: flex-start;
         gap: 20px;
 
@@ -169,15 +169,22 @@
           }
         }
       }
+
+      .form {
+        width: 60%;
+      }
     }
 
     @media screen and (max-width: 480px) {
-      .company {
-        img {
-          width: 100px;
-        }
+      flex-direction: column;
+      gap: 30px;
 
-        div {}
+      .company {
+        max-width: unset;
+
+        div {
+          width: 100%;
+        }
       }
     }
   }
