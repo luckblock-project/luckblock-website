@@ -54,12 +54,17 @@
 
     .token_stats {
       @include center;
-      justify-content: space-between;
+      // justify-content: space-between;
       width: 100%;
       gap: 20px;
-      padding: 5px 20px;
+      padding: 10px 20px;
       border-radius: 4px;
       background-color: $light-black;
+
+      img {
+        width: 160px;
+        height: auto;
+      }
 
       hr {
         width: 1px;

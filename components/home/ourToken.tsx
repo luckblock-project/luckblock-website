@@ -34,6 +34,14 @@ export function OurToken(): JSX.Element {
             <TickIcon />
             <span>Liquidity Providing</span>
           </span>
+          <span className={styles.feature}>
+            <TickIcon />
+            <span>Staking</span>
+          </span>
+          <span className={styles.feature}>
+            <TickIcon />
+            <span>DAO & Governance</span>
+          </span>
         </div>
         <div className={styles.token_stats}>
           <Image
@@ -41,8 +49,9 @@ export function OurToken(): JSX.Element {
             alt="On Board CERTIK"
             width={120}
             height={30}
+            quality={100}
           />
-          <hr />
+          {/* <hr />
           <div className={styles.stat}>
             <ExpanceIcon />
             <span>0x9c330573849533234634</span>
@@ -53,7 +62,7 @@ export function OurToken(): JSX.Element {
             <EthereumIcon />
             <span>0x9c330573849533234634</span>
             <CopyIcon />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.image}>
