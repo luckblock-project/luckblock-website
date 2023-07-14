@@ -4,6 +4,7 @@ import TokenGlowImage from "../../public/token-glow.png";
 import TokenImage from "../../public/token.png";
 import { TickIcon } from "../icons";
 import { UnderlineText } from "../underlineText";
+import CertikImage from "../../public/certik.svg"
 
 export function OurToken(): JSX.Element {
   return (
@@ -43,12 +44,10 @@ export function OurToken(): JSX.Element {
         </div>
         <div className={styles.token_stats}>
           <Image
-            src="/certik.png"
-            alt="On Board CERTIK"
-            width={120}
-            height={30}
-            quality={100}
+            src={CertikImage}
+            alt="CERTIK"
           />
+          <div className={styles.beacon}/>
           {/* <hr />
           <div className={styles.stat}>
             <ExpanceIcon />
