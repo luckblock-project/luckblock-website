@@ -1,10 +1,9 @@
 @import "variables";
 @import "mixins";
+@import "animations";
 
 .our_token {
-  margin: 0 auto;
   @include center;
-  padding: 40px 0 0;
 
   @media screen and (min-width: 1400px) {
     max-width: 1400px;
@@ -75,6 +74,7 @@
         font-size: 14px;
         font-weight: 500;
         color: $light-gray;
+        padding: 10px 0px;
 
         span {
           color: $gray-text;
@@ -89,11 +89,27 @@
   .image {
     @include center;
     flex: 0.5;
+    max-width: 600px;
+    position: relative;
 
-    img {
-      margin-top: -120px;
-      width: 600px;
+    .image_token {
+      @include bob;
+      z-index: 2;
+      width: 100%;
       height: auto;
+    }
+
+    .image_glow {
+      @include glow;
+      z-index: 1;
+      height: 130%;
+      width: 130%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: -50px;
+      bottom: -50px;
+      text-align: center;
     }
   }
 
@@ -104,22 +120,12 @@
         line-height: 44px;
       }
     }
-
-    .image {
-      flex: 0.5;
-
-      img {
-        margin-top: -160px;
-        width: 400px;
-        height: auto;
-      }
-    }
   }
 
-  @media screen and (max-width: 968px) {
-    .content {
-      flex: 0.7;
 
+  @media screen and (max-width: 1018px) {
+    padding-top: 40px;
+    .content {
       h3 {
         font-size: 32px;
         line-height: 40px;
@@ -131,37 +137,20 @@
         }
       }
     }
-
-    .image {
-      flex: 0.5;
-      margin-left: -100px;
-
-      img {
-        margin-top: -100px;
-        width: 340px;
-        height: auto;
-      }
-    }
   }
 
-  @media screen and (max-width: 768px) {
-    padding: 20px;
+  @media screen and (max-width: 900px) {
+    padding-top: 60px;
     flex-direction: column-reverse;
 
     .content {
       width: 100%;
       padding: 0;
       align-items: center;
-      gap: 18px;
 
       h3 {
         font-size: 28px;
         line-height: 36px;
-
-        .title_underline:after {
-          transform: scaleX(0.65);
-          left: -32px;
-        }
       }
 
       p {
@@ -206,13 +195,28 @@
     }
 
     .image {
-      flex: 1;
       margin-left: 0;
 
-      img {
+      .image_token {
         margin-top: -60px;
         width: 280px;
         height: auto;
+      }
+
+    .image_glow {
+      height: 150%;
+      width: 150%;
+      left: -60px;
+      bottom: -25px;
+    }
+    }
+  }
+
+  @media (max-width: 425px) {
+    .content {
+      h3 {
+        @include center(column);
+        gap: 5px
       }
     }
   }

@@ -2,21 +2,33 @@
 @import "mixins";
 
 .solutions {
-  padding: 40px 20px;
+  @include center(column);
+  padding: 0px 20px;
+  padding-top: 80px;
+  gap: 20px;
 
   .solution_row {
     @include center;
     justify-content: space-between;
-    padding: 20px 0;
 
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
 
-    .solution_image {
+    .solution_image_container {
+      @include center;
       width: 50%;
-      height: auto;
+
+      .solution_image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+
+        padding: 20px;
+        mix-blend-mode: screen;
+      }
     }
+
 
     .solution_content {
       width: 50%;
@@ -28,11 +40,6 @@
       h3 {
         font-size: 38px;
         font-weight: 500;
-
-        .solution_underline_text:after {
-          transform: scaleX(1.2);
-          left: 22px;
-        }
       }
 
       p {
@@ -59,38 +66,30 @@
     padding: 40px 0;
 
     .solution_row {
-      .solution_image {
-        width: 60%;
-        height: auto;
+      .solution_image_container {
+        .solution_image {
+          max-width: 300px;
+        }
       }
 
       .solution_content {
-        width: 40%;
         gap: 18px;
         padding: 0;
-        align-items: center;
 
         h3 {
           font-size: 24px;
-          text-align: center;
-
-          .solution_underline_text:after {
-            transform: scaleX(0.8);
-            left: -20px;
-          }
         }
 
         p {
           font-size: 16px;
           line-height: 20px;
-          text-align: center;
         }
       }
     }
   }
 
   @media screen and (max-width: 767px) {
-    padding: 0;
+    gap: 40px;
 
     .solution_row {
       flex-direction: column;
@@ -99,21 +98,27 @@
         flex-direction: column;
       }
 
-      .solution_image {
-        width: 240px;
-        height: auto;
+      .solution_image_container {
+        width: 100%;
+        .solution_image {
+          max-width: 340px;
+          height: auto;
+        }
       }
 
       .solution_content {
         width: 100%;
+        align-items: center;
 
         h3 {
           font-size: 18px;
+          text-align: center;
         }
 
         p {
           font-size: 12px;
           line-height: 16px;
+          text-align: center;
         }
       }
     }

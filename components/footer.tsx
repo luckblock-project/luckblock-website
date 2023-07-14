@@ -9,7 +9,7 @@ export default function Footer(): JSX.Element {
       <div>
         <div className={styles.company}>
           <Image
-            src="/logo.png"
+            src="/logo.jpeg"
             alt="Blockrover Logo"
             width={120}
             height={40}

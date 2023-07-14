@@ -31,6 +31,14 @@ export default function Navbar(): JSX.Element {
     };
   }, []);
 
+  const closeNavOnScroll = () => {
+    const mobile_nav = document.getElementById("mobile_nav");
+    const open_button = document.getElementById("open_button");
+    const close_button = document.getElementById("close_button");
+
+    closeNav(mobile_nav, open_button, close_button);
+  }
+
   const openNav = (mobile_nav: any, open_button: any, close_button: any) => {
     mobile_nav.classList.remove("hide");
     open_button.classList.add("hide");
@@ -47,9 +55,9 @@ export default function Navbar(): JSX.Element {
     <nav className={`${styles.navbar}`}>
       <div className={styles.desktop_view}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/" scroll={false}>
             <Image
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Blockrover Logo"
               width={240}
               height={60}
@@ -60,32 +68,32 @@ export default function Navbar(): JSX.Element {
         <div className={styles.navlinks}>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" scroll={false}>Home</Link>
             </li>
             <li>
-              <Link href="#solutions">Solutions</Link>
+              <Link href="#solutions" scroll={false}>Solutions</Link>
             </li>
             <li>
-              <Link href="#rover">$ROVER</Link>
+              <Link href="#rover" scroll={false}>$ROVER</Link>
             </li>
             <li>
-              <Link href="#roadmap">Roadmap</Link>
+              <Link href="#roadmap" scroll={false}>Roadmap</Link>
             </li>
             <li>
-              <Link href="#contact-us">Contact Us</Link>
+              <Link href="#contact-us" scroll={false}>Contact Us</Link>
             </li>
           </ul>
         </div>
         <div className={styles.signup_login}>
-          <Link href="/login">Login</Link>
-          <Link href="/sign-up">Sign Up</Link>
+          <Link href="https://litepaper.blockroverproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
+          <Link href="https://linktr.ee/blockrover" target="_blank" rel="noreferrer">Linktree</Link>
         </div>
       </div>
       <div className={styles.mobile_view}>
         <div className={styles.mobile_logo}>
-          <Link href="#">
+          <Link href="/" scroll={false} onClick={closeNavOnScroll}>
             <Image
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Blockrover Logo"
               width={180}
               height={40}
@@ -99,24 +107,24 @@ export default function Navbar(): JSX.Element {
           <div className={styles.mobile_nav_content}>
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" scroll={false} onClick={closeNavOnScroll}>Home</Link>
               </li>
               <li>
-                <Link href="#solutions">Solutions</Link>
+                <Link href="#solutions" scroll={false} onClick={closeNavOnScroll}>Solutions</Link>
               </li>
               <li>
-                <Link href="#rover">$ROVER</Link>
+                <Link href="#rover" scroll={false} onClick={closeNavOnScroll}>$ROVER</Link>
               </li>
               <li>
-                <Link href="#roadmap">Roadmap</Link>
+                <Link href="#roadmap" scroll={false} onClick={closeNavOnScroll}>Roadmap</Link>
               </li>
               <li>
-                <Link href="#contact-us">Contact Us</Link>
+                <Link href="#contact-us" scroll={false} onClick={closeNavOnScroll}>Contact Us</Link>
               </li>
             </ul>
             <div className={styles.signup_login}>
-              <Link href="/login">Login</Link>
-              <Link href="/sign-up">Sign Up</Link>
+              <Link href="https://litepaper.blockroverproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
+              <Link href="https://linktr.ee/blockrover" target="_blank" rel="noreferrer">Linktree</Link>
             </div>
           </div>
         </div>

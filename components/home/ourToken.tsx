@@ -2,13 +2,15 @@ import styles from "@/styles/ourToken.module.scss";
 import Image from "next/image";
 import { CopyIcon, EthereumIcon, ExpanceIcon, TickIcon } from "../icons";
 import { UnderlineText } from "../underlineText";
+import TokenImage from "../../public/token.png";
+import TokenGlowImage from "../../public/token-glow.png";
 
 export function OurToken(): JSX.Element {
   return (
     <div className={styles.our_token}>
       <div className={styles.content}>
         <h3>
-          New generation <UnderlineText text="$ROVER" className={styles.title_underline} />
+          New generation <UnderlineText text="$ROVER" />
         </h3>
         <p>
           Issue InTen&apos;s smart company cards with individual spending
@@ -56,12 +58,14 @@ export function OurToken(): JSX.Element {
       </div>
       <div className={styles.image}>
         <Image
-          src="/token.png"
+          src={TokenImage}
           alt="$ROVER Token"
-          width={500}
-          height={500}
-          quality={100}
+          className={styles.image_token}
         />
+        <Image
+          src={TokenGlowImage}
+          alt="Token Glow"
+          className={styles.image_glow} />
       </div>
     </div>
   );
