@@ -27,7 +27,7 @@ export default function Hero(): JSX.Element {
           an era of transparency, security, and efficiency
         </p>
         <div className={styles.hero_buttons}>
-          <Link className={styles.hero_btn} href="/">
+          <Link className={styles.hero_btn} href="https://app.blockrover.io/" target="_blank">
             BETA <AngleRightIcon />
           </Link>
           <Link className={styles.hero_btn} href="https://t.me/blockroverbot" target="_blank">
