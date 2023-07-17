@@ -25,7 +25,7 @@ export default function Footer(): JSX.Element {
             <Link href="https://twitter.com/blockrovereth" target="_blank">
               <TwitterIcon />
             </Link>
-            <Link href="https://t.me/blockroverentry" target="_blank">
+            <Link href="https://t.me/blockrovercommunity" target="_blank">
               <TelegramIcon />
             </Link>
             <Link href="https://t.me/blockroverbot" target="_blank">

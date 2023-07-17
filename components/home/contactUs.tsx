@@ -6,7 +6,7 @@ export default function ContactUs(): JSX.Element {
   return (
     <div className={styles.contact_us}>
       <div className={styles.innerContainer}>
-        <Link className={styles.contact_card} href="https://t.me/blockroverentry" target="_blank" rel="noreferrer">
+        <Link className={styles.contact_card} href="https://t.me/blockrovercommunity" target="_blank" rel="noreferrer">
           <span className={styles.icon}>
             <TelegramIcon />
           </span>
