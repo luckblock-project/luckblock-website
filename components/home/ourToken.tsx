@@ -11,7 +11,7 @@ export function OurToken(): JSX.Element {
     <div className={styles.our_token}>
       <div className={styles.content}>
         <h3>
-          New generation <UnderlineText text="$ROVER" />
+          Coming to <UnderlineText text="Ethereum" />
         </h3>
         <p>
           $ROVER is an erc20 utility token that provides investors access to our suite of tools. 100% of the token revenue goes directly to buying and burning $ROVER.

@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/styles/footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +10,22 @@ import {
   TelegramIcon,
   TwitterIcon,
 } from "./icons";
+import { toast } from "react-toastify";
 
 export default function Footer(): JSX.Element {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // @temp - DUMMY SOLUTION
+    // @ts-ignore
+    const email = e.target.email.value;
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (email.match(validRegex))
+      toast.success("Subscribed!");
+    else
+      toast.error("Invalid Email");
+  }
+
   return (
     <footer className={styles.footer}>
       <div>
@@ -25,7 +41,7 @@ export default function Footer(): JSX.Element {
             <Link href="https://twitter.com/blockrovereth" target="_blank">
               <TwitterIcon />
             </Link>
-            <Link href="https://t.me/blockroverentry" target="_blank">
+            <Link href="https://t.me/blockrovercommunity" target="_blank">
               <TelegramIcon />
             </Link>
             <Link href="https://t.me/blockroverbot" target="_blank">
@@ -59,9 +75,9 @@ export default function Footer(): JSX.Element {
             </div>
           </div>
         </div> */}
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <h4 className={styles.block_header}>SUBSCRIBE TO NEWSLETTER</h4>
-          <input type="email" placeholder="Enter your email" />
+          <input id="email" type="email" placeholder="Enter your email" />
           <button type="submit">Subscribe</button>
         </form>
       </div>

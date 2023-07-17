@@ -25,11 +25,11 @@ export function Solutions(): JSX.Element {
 
   const solutions = [
     {
-      title: "Empowering Intelligent Decision-Making with",
+      title: "Empowering Intelligent Decision-Making",
       underline: "Token Analyzer: ",
       content:
         "Our token analyzer provides all the info you need to know before aping your next token. Pricing details, contract security, team + marketing data; proprietary holder distro, twitter & community scores and more.",
-      link: "/",
+      link: "https://app.blockrover.io/scan",
       img: TokenAnalyzerImage,
     },
     {
@@ -37,7 +37,7 @@ export function Solutions(): JSX.Element {
       underline: "AI Auditor: ",
       content:
         "Can't afford to fail at launch? Our Ai auditor will conduct a full analysis of your smart contract, provide exact solutions to bug/logic issues, provide optimization suggestions & export all findings to a personalized PDF.",
-      link: "/",
+      link: "https://app.blockrover.io/audit",
       img: AiAuditorImage,
     },
     {
@@ -45,7 +45,7 @@ export function Solutions(): JSX.Element {
       underline: "SDKs & API Access: ",
       content:
         "$ROVER's robust Software Development Kits (SDKs) and API Access open up a world of possibilities for developers. Seamlessly integrate blockchain technology into your applications, products, or services with ease, leveraging $ROVER's powerful tools and extensive resources.",
-      link: "/",
+      link: "",
       img: SdkApiImage,
     },
     {
@@ -53,7 +53,7 @@ export function Solutions(): JSX.Element {
       underline: "DeFi Sniper Bot: ",
       content:
         "The most advanced trading bot in DeFi. Trade on our dApp or utilize our Telegram bot directly. Copy trade, channel sniping, anti-rug, limit orders and so much more.",
-      link: "/",
+      link: "",
       img: DeFiSniperImage,
     },
   ];
@@ -74,7 +74,11 @@ export function Solutions(): JSX.Element {
             <UnderlineText text={solutions[0].underline} /> {solutions[0].title}
           </h3>
           <p>{solutions[0].content}</p>
-          <Link href={solutions[0].link}>Learn More</Link>
+          <Link href={solutions[0].link} className={solutions[0].link ? "" : styles.comingSoon}>
+            {solutions[0].link
+              ? "Explore"
+              : "Coming Soon"}
+          </Link>
         </div>
       </div>
       {/* AI Audit */}
@@ -92,7 +96,11 @@ export function Solutions(): JSX.Element {
             {solutions[1].title}
           </h3>
           <p>{solutions[1].content}</p>
-          <Link href={solutions[1].link}>Learn More</Link>
+          <Link href={solutions[1].link} className={solutions[1].link ? "" : styles.comingSoon}>
+            {solutions[1].link
+              ? "Explore"
+              : "Coming Soon"}
+          </Link>
         </div>
       </div>
       {/* SDKs & APIs */}
@@ -110,7 +118,11 @@ export function Solutions(): JSX.Element {
             {solutions[2].title}
           </h3>
           <p>{solutions[2].content}</p>
-          <Link href={solutions[2].link}>Learn More</Link>
+          <Link href={solutions[2].link} className={solutions[2].link ? "" : styles.comingSoon}>
+            {solutions[2].link
+              ? "Explore"
+              : "Coming Soon"}
+          </Link>
         </div>
       </div>
       {/* Sniper Bot */}
@@ -131,7 +143,11 @@ export function Solutions(): JSX.Element {
             {solutions[3].title}
           </h3>
           <p>{solutions[3].content}</p>
-          <Link href={solutions[3].link}>Learn More</Link>
+          <Link href={solutions[3].link} className={solutions[3].link ? "" : styles.comingSoon}>
+            {solutions[3].link
+              ? "Explore"
+              : "Coming Soon"}
+          </Link>
         </div>
       </div>
     </div>
