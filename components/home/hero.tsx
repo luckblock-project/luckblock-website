@@ -12,7 +12,7 @@ export default function Hero(): JSX.Element {
       <div className={styles.hero_content}>
         <Badge className={styles.hero_badge}>
           <Image src="./pie.svg" alt="pie icon" height={20} width={20} />
-          Launching on Uniswap 07.20.23
+          Launching on Uniswap 07.25.23
         </Badge>
         <h1 title="$ROVER: Blockchain Innovation">
           <UnderlineText
@@ -24,7 +24,7 @@ export default function Hero(): JSX.Element {
         <p>
           Unlock the limitless potential of the blockchain with $ROVER, the
           trailblazing token revolutionizing the digital landscape. Pioneering
-          an era of transparency, security, and efficiency
+          an era of transparency, security, and efficiency.
         </p>
         <div className={styles.hero_buttons}>
           <Link className={styles.hero_btn} href="https://app.blockrover.io/" target="_blank">
