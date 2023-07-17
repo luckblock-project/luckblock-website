@@ -56,6 +56,10 @@
         font-weight: 500;
         cursor: pointer;
 
+        &.comingSoon {
+          pointer-events: none !important;
+        }
+
         &:hover {
           background-color: $light-black;
         }
@@ -101,6 +105,7 @@
 
       .solution_image_container {
         width: 100%;
+
         .solution_image {
           max-width: 340px;
           height: auto;
