@@ -76,7 +76,7 @@ export function Solutions(): JSX.Element {
           <p>{solutions[0].content}</p>
           <Link href={solutions[0].link} className={solutions[0].link ? "" : styles.comingSoon}>
             {solutions[0].link
-              ? "Learn More"
+              ? "Explore"
               : "Coming Soon"}
           </Link>
         </div>
@@ -98,7 +98,7 @@ export function Solutions(): JSX.Element {
           <p>{solutions[1].content}</p>
           <Link href={solutions[1].link} className={solutions[1].link ? "" : styles.comingSoon}>
             {solutions[1].link
-              ? "Learn More"
+              ? "Explore"
               : "Coming Soon"}
           </Link>
         </div>
@@ -120,7 +120,7 @@ export function Solutions(): JSX.Element {
           <p>{solutions[2].content}</p>
           <Link href={solutions[2].link} className={solutions[2].link ? "" : styles.comingSoon}>
             {solutions[2].link
-              ? "Learn More"
+              ? "Explore"
               : "Coming Soon"}
           </Link>
         </div>
@@ -145,7 +145,7 @@ export function Solutions(): JSX.Element {
           <p>{solutions[3].content}</p>
           <Link href={solutions[3].link} className={solutions[3].link ? "" : styles.comingSoon}>
             {solutions[3].link
-              ? "Learn More"
+              ? "Explore"
               : "Coming Soon"}
           </Link>
         </div>
