@@ -29,7 +29,7 @@ export function Solutions(): JSX.Element {
       underline: "Token Analyzer: ",
       content:
         "Our token analyzer provides all the info you need to know before aping your next token. Pricing details, contract security, team + marketing data; proprietary holder distro, twitter & community scores and more.",
-      link: "https://app.blockrover.io/scan",
+      link: "https://app.luckblock.io/scan",
       img: TokenAnalyzerImage,
     },
     {
@@ -37,7 +37,7 @@ export function Solutions(): JSX.Element {
       underline: "AI Auditor: ",
       content:
         "Can't afford to fail at launch? Our Ai auditor will conduct a full analysis of your smart contract, provide exact solutions to bug/logic issues, provide optimization suggestions & export all findings to a personalized PDF.",
-      link: "https://app.blockrover.io/audit",
+      link: "https://app.luckblock.io/audit",
       img: AiAuditorImage,
     },
     {

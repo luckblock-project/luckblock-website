@@ -88,7 +88,7 @@ export default function Roadmap(): JSX.Element {
                 </Badge>
                 <div className={styles.content}>
                   <div>
-                    <p className={styles.task_done}>BlockRover BETA release</p>
+                    <p className={styles.task_done}>LuckBlock BETA release</p>
                     <p>$Rover Uniswap Launch</p>
                     <p>CoinGecko / CMC Listings</p>
                     <p>First CEX Listing</p>
@@ -112,7 +112,7 @@ export default function Roadmap(): JSX.Element {
                 </Badge>
                 <div className={styles.content}>
                   <div>
-                    <p>Expand BlockRover Team</p>
+                    <p>Expand LuckBlock Team</p>
                     <p>Global Partnerships</p>
                     <p>Staking Release</p>
                     <p>Official v1 release</p>

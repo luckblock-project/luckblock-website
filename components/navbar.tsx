@@ -58,7 +58,7 @@ export default function Navbar(): JSX.Element {
           <Link href="/" scroll={false}>
             <Image
               src="/logo.jpeg"
-              alt="Blockrover Logo"
+              alt="Luckblock Logo"
               width={240}
               height={60}
               quality={100}
@@ -85,8 +85,8 @@ export default function Navbar(): JSX.Element {
           </ul>
         </div>
         <div className={styles.signup_login}>
-          <Link href="https://litepaper.blockroverproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
-          <Link href="https://linktr.ee/blockrover" target="_blank" rel="noreferrer">Linktree</Link>
+          <Link href="https://litepaper.luckblockproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
+          <Link href="https://linktr.ee/luckblock" target="_blank" rel="noreferrer">Linktree</Link>
         </div>
       </div>
       <div className={styles.mobile_view}>
@@ -94,7 +94,7 @@ export default function Navbar(): JSX.Element {
           <Link href="/" scroll={false} onClick={closeNavOnScroll}>
             <Image
               src="/logo.jpeg"
-              alt="Blockrover Logo"
+              alt="Luckblock Logo"
               width={180}
               height={40}
               quality={100}
@@ -123,8 +123,8 @@ export default function Navbar(): JSX.Element {
               </li>
             </ul>
             <div className={styles.signup_login}>
-              <Link href="https://litepaper.blockroverproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
-              <Link href="https://linktr.ee/blockrover" target="_blank" rel="noreferrer">Linktree</Link>
+              <Link href="https://litepaper.luckblockproject.io" target="_blank" rel="noreferrer">Litepaper</Link>
+              <Link href="https://linktr.ee/luckblock" target="_blank" rel="noreferrer">Linktree</Link>
             </div>
           </div>
         </div>

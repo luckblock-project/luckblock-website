@@ -27,16 +27,16 @@ export default function Hero(): JSX.Element {
           an era of transparency, security, and efficiency.
         </p>
         <div className={styles.hero_buttons}>
-          <Link className={styles.hero_btn} href="https://app.blockrover.io/" target="_blank">
+          <Link className={styles.hero_btn} href="https://app.luckblock.io/" target="_blank">
             BETA <AngleRightIcon />
           </Link>
-          <Link className={styles.hero_btn} href="https://t.me/blockroverbot" target="_blank">
+          <Link className={styles.hero_btn} href="https://t.me/luckblockbot" target="_blank">
             Telegram Bot <AngleRightIcon />
           </Link>
         </div>
       </div>
       <div className={styles.hero_image}>
-        <Image src={HeroRobo} alt="BlockRover Bot" />
+        <Image src={HeroRobo} alt="LuckBlock Bot" />
         <div className={styles.image_glow} />
       </div>
     </section>

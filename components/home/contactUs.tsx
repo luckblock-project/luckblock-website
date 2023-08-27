@@ -6,7 +6,7 @@ export default function ContactUs(): JSX.Element {
   return (
     <div className={styles.contact_us}>
       <div className={styles.innerContainer}>
-        <Link className={styles.contact_card} href="https://t.me/blockrovercommunity" target="_blank" rel="noreferrer">
+        <Link className={styles.contact_card} href="https://t.me/luckblockcommunity" target="_blank" rel="noreferrer">
           <span className={styles.icon}>
             <TelegramIcon />
           </span>
@@ -15,7 +15,7 @@ export default function ContactUs(): JSX.Element {
             <h3>Telegram</h3>
           </span>
         </Link>
-        <Link className={styles.contact_card} href="https://twitter.com/blockrovereth" target="_blank" rel="noreferrer">
+        <Link className={styles.contact_card} href="https://twitter.com/luckblocketh" target="_blank" rel="noreferrer">
           <span className={styles.icon}>
             <TwitterIcon />
           </span>
@@ -24,7 +24,7 @@ export default function ContactUs(): JSX.Element {
             <h3>Twitter</h3>
           </span>
         </Link>
-        <Link className={styles.contact_card} href="https://litepaper.blockroverproject.org" target="_blank" rel="noreferrer">
+        <Link className={styles.contact_card} href="https://litepaper.luckblockproject.org" target="_blank" rel="noreferrer">
           <span className={styles.icon}>
             <DocsIcon />
           </span>

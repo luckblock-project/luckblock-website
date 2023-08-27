@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const plus_jakarta_sans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Blockrover",
+  title: "Luckblock",
   description: "Audit smart contracts thanks to AI.",
 };
 

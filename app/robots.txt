@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 Disallow: /admin/
 
-Sitemap: https://blockrover.com/sitemap.xml
+Sitemap: https://luckblock.com/sitemap.xml

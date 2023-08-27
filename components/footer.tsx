@@ -32,25 +32,25 @@ export default function Footer(): JSX.Element {
         <div className={styles.company}>
           <Image
             src="/logo.jpeg"
-            alt="Blockrover Logo"
+            alt="Luckblock Logo"
             width={120}
             height={40}
             quality={100}
           />
           <div>
-            <Link href="https://twitter.com/blockrovereth" target="_blank">
+            <Link href="https://twitter.com/luckblocketh" target="_blank">
               <TwitterIcon />
             </Link>
-            <Link href="https://t.me/blockrovercommunity" target="_blank">
+            <Link href="https://t.me/luckblockcommunity" target="_blank">
               <TelegramIcon />
             </Link>
-            <Link href="https://t.me/blockroverbot" target="_blank">
+            <Link href="https://t.me/luckblockbot" target="_blank">
               <BotIcon />
             </Link>
-            <Link href="https://blockrover.medium.com/" target="_blank">
+            <Link href="https://luckblock.medium.com/" target="_blank">
               <MediumIcon />
             </Link>
-            <Link href="https://linktr.ee/blockrover" target="_blank">
+            <Link href="https://linktr.ee/luckblock" target="_blank">
               <LinktreeIcon />
             </Link>
           </div>
